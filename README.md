@@ -1,19 +1,74 @@
 # Elsa Integrations
 
-Welcome to the **Elsa Integrations** repository! This project aims to provide a collection of integration modules for [Elsa Workflows](https://elsa-workflows.github.io/), enabling seamless workflow automation across various third-party services.
+Welcome to the **Elsa Integrations** repository! This project provides a collection of integration modules for [Elsa Workflows](https://elsa-workflows.github.io/), enabling seamless workflow automation across various third-party services.
 
-## 🚀 Overview
-Elsa Integrations aims to extend the capabilities of Elsa Workflows by providing modular integration packages for external platforms, such as:
-- **Messaging & Communication** (Telegram, Slack, Discord, Microsoft Teams)
-- **Email & Productivity** (Gmail, Outlook, Office 365)
-- **Storage Services** (Google Drive, OneDrive, Azure Storage, Dropbox)
-- **DevOps & Monitoring** (Azure DevOps, GitHub, Jenkins, Datadog)
-- **Cloud Compute & Serverless** (Azure Functions, AWS Lambda, Google Cloud Functions)
-- **E-Commerce & Payments** (Stripe, PayPal, Shopify, QuickBooks)
-- **AI & Automation** (OpenAI, Google AI, AWS Comprehend)
+---
+
+## 🚀 Integration Status
+
+Below is the current status of each integration. Checkboxes indicate implementation progress.
+
+### 📨 Messaging & Communication
+| Status | Integration | Description | Module Name |
+|--------|------------|-------------|-------------|
+| [ ] | **Telegram** | Send & receive messages, file downloads | `Elsa.Integrations.Telegram` |
+| [ ] | **Slack** | Channel messages, user notifications | `Elsa.Integrations.Slack` |
+| [ ] | **Discord** | Bot commands, message triggers | `Elsa.Integrations.Discord` |
+| [ ] | **Microsoft Teams** | Chat automation, meeting reminders | `Elsa.Integrations.Teams` |
+
+### 📧 Email & Productivity
+| Status | Integration | Description | Module Name |
+|--------|------------|-------------|-------------|
+| [ ] | **Gmail** | Send, receive, label, draft emails | `Elsa.Integrations.Gmail` |
+| [ ] | **Outlook (Office 365)** | Email management via Microsoft Graph API | `Elsa.Integrations.Outlook` |
+| [ ] | **Google Calendar** | Event scheduling and updates | `Elsa.Integrations.GoogleCalendar` |
+| [ ] | **Microsoft Calendar** | Office 365 calendar integration | `Elsa.Integrations.Office365Calendar` |
+
+### 🗄️ Storage Services
+| Status | Integration | Description | Module Name |
+|--------|------------|-------------|-------------|
+| [ ] | **Google Drive** | Upload, download, manage files | `Elsa.Integrations.GoogleDrive` |
+| [ ] | **OneDrive** | File storage and access for Office 365 | `Elsa.Integrations.OneDrive` |
+| [ ] | **Azure Storage** | Blob storage management | `Elsa.Integrations.AzureStorage` |
+| [ ] | **Dropbox** | Cloud storage and file sync | `Elsa.Integrations.Dropbox` |
+
+### 🛠 DevOps & Monitoring
+| Status | Integration | Description | Module Name |
+|--------|------------|-------------|-------------|
+| [ ] | **Azure DevOps** | Pipelines, repositories, work items | `Elsa.Integrations.AzureDevOps` |
+| [ ] | **GitHub** | PR automation, repo events | `Elsa.Integrations.GitHub` |
+| [ ] | **GitLab** | CI/CD triggers and repo management | `Elsa.Integrations.GitLab` |
+| [ ] | **Jenkins** | Pipeline automation and job execution | `Elsa.Integrations.Jenkins` |
+| [ ] | **Datadog** | Monitoring, logging, and alerts | `Elsa.Integrations.Datadog` |
+
+### ☁️ Cloud Compute & Serverless
+| Status | Integration | Description | Module Name |
+|--------|------------|-------------|-------------|
+| [ ] | **Azure Functions** | Serverless function triggers | `Elsa.Integrations.AzureFunctions` |
+| [ ] | **AWS Lambda** | Invoke and trigger Lambda functions | `Elsa.Integrations.AWSLambda` |
+| [ ] | **Google Cloud Functions** | Event-driven function automation | `Elsa.Integrations.GoogleCloudFunctions` |
+
+### 💰 Payments & Finance
+| Status | Integration | Description | Module Name |
+|--------|------------|-------------|-------------|
+| [ ] | **Stripe** | Payment processing, subscriptions | `Elsa.Integrations.Stripe` |
+| [ ] | **PayPal** | Transactions, refunds, invoicing | `Elsa.Integrations.PayPal` |
+| [ ] | **Square** | POS and e-commerce transactions | `Elsa.Integrations.Square` |
+| [ ] | **QuickBooks** | Invoice and expense automation | `Elsa.Integrations.QuickBooks` |
+
+### 🤖 AI & Automation
+| Status | Integration | Description | Module Name |
+|--------|------------|-------------|-------------|
+| [ ] | **OpenAI** | GPT-based text generation, chatbots | `Elsa.Integrations.OpenAI` |
+| [ ] | **Google AI** | AI-enhanced search, translation | `Elsa.Integrations.GoogleAI` |
+| [ ] | **AWS Comprehend** | NLP services for text analysis | `Elsa.Integrations.AWSComprehend` |
+| [ ] | **Azure AI** | Vision, speech, language processing | `Elsa.Integrations.AzureAI` |
+
+---
 
 ## 📦 Structure
 Each integration is structured as a standalone package under the `Elsa.Integrations` namespace. Example:
+
 ```
 Elsa.Integrations.Gmail/
   ├── Services/
