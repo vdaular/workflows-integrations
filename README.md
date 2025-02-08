@@ -1,6 +1,6 @@
 # Elsa Integrations
 
-Welcome to the **Elsa Integrations** repository! This project provides a collection of integration modules for [Elsa Workflows](https://elsa-workflows.github.io/), enabling seamless workflow automation across various third-party services.
+Welcome to the **Elsa Integrations** repository! This project provides a collection of integration modules for [Elsa Workflows](https://github.com/elsa-workflows/elsa-core), enabling seamless workflow automation across various third-party services.
 
 ---
 
@@ -95,6 +95,4 @@ services.AddElsa()
 We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md) for more details.
 
 ## 📜 License
-This repository is licensed under the **MIT License**.
-
----
+This repository is licensed under the [MIT License](https://github.com/elsa-workflows/elsa-integrations/blob/main/LICENSE).
