@@ -48,6 +48,14 @@ Below is the current status of each integration. Checkboxes indicate implementat
 | [ ] | **AWS Lambda** | Invoke and trigger Lambda functions | `Elsa.Integrations.AWSLambda` | |
 | [ ] | **Google Cloud Functions** | Event-driven function automation | `Elsa.Integrations.GoogleCloudFunctions` | |
 
+### 📊 CRM & Sales Automation
+| Status | Integration | Description | Module Name | Issue |
+|--------|------------|-------------|-------------|-------|
+| [ ] | **Salesforce** | Lead management, opportunity tracking | `Elsa.Integrations.Salesforce` | [Open Issue](#) |
+| [ ] | **HubSpot** | Contacts, deals, email automation | `Elsa.Integrations.HubSpot` | [Open Issue](#) |
+| [ ] | **Zoho CRM** | Lead scoring, campaign tracking | `Elsa.Integrations.ZohoCRM` | [Open Issue](#) |
+| [ ] | **Pipedrive** | Sales pipeline automation | `Elsa.Integrations.Pipedrive` | [Open Issue](#) |
+
 ### 💰 Payments & Finance
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
@@ -63,6 +71,14 @@ Below is the current status of each integration. Checkboxes indicate implementat
 | [ ] | **Google AI** | AI-enhanced search, translation | `Elsa.Integrations.GoogleAI` | |
 | [ ] | **AWS Comprehend** | NLP services for text analysis | `Elsa.Integrations.AWSComprehend` | |
 | [ ] | **Azure AI** | Vision, speech, language processing | `Elsa.Integrations.AzureAI` | |
+
+### 🎥 Video & Streaming Platforms
+| Status | Integration | Description | Module Name | Issue |
+|--------|------------|-------------|-------------|-------|
+| [ ] | **YouTube** | Upload videos, retrieve video details, manage playlists | `Elsa.Integrations.YouTube` | [Open Issue](#) |
+| [ ] | **Rumble** | Upload videos, fetch channel videos, manage content | `Elsa.Integrations.Rumble` | [Open Issue](#) |
+| [ ] | **Twitch** | Live stream events, chat automation, clip management | `Elsa.Integrations.Twitch` | [Open Issue](#) |
+| [ ] | **Vimeo** | Upload videos, manage privacy settings, get video analytics | `Elsa.Integrations.Vimeo` | [Open Issue](#) |
 
 ---
 
