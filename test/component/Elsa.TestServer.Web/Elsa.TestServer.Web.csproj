@@ -12,6 +12,7 @@
         <PackageReference Include="Elsa.Identity"/>
         <PackageReference Include="Elsa.JavaScript"/>
         <PackageReference Include="Elsa.Workflows.Api"/>
+        <PackageReference Include="JetBrains.Annotations"/>
     </ItemGroup>
 
 </Project>
