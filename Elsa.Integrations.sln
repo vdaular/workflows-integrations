@@ -34,6 +34,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.OrchardCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.AzureServiceBus", "src\Elsa.Integrations.AzureServiceBus\Elsa.Integrations.AzureServiceBus.csproj", "{BC283CFE-D542-4D40-AE7F-6888B876AA2B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{D0212324-351E-4CA6-95EE-27754B5367CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{3948BAF0-023F-4B43-8E77-56C3B00C6EFD}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\packages.yml = .github\workflows\packages.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_build", "build\_build.csproj", "{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +73,10 @@ Global
 		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +88,6 @@ Global
 		{128B2FC3-81A7-4327-9665-9155B05F21DA} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{BC283CFE-D542-4D40-AE7F-6888B876AA2B} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{3948BAF0-023F-4B43-8E77-56C3B00C6EFD} = {D0212324-351E-4CA6-95EE-27754B5367CC}
 	EndGlobalSection
 EndGlobal
