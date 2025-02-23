@@ -25,6 +25,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Slack", "src\Elsa.Integrations.Slack\Elsa.Integrations.Slack.csproj", "{9732E404-11B5-48DB-B5D9-97997F018830}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A99FA26E-2098-403A-BD04-6BBCFBE3AC7D}"
+	ProjectSection(SolutionItems) = preProject
+		test\Directory.Build.props = test\Directory.Build.props
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Slack.Tests", "test\Elsa.Integrations.Slack.Tests\Elsa.Integrations.Slack.Tests.csproj", "{861E1230-F9CB-450C-845E-04DFDA259E26}"
 EndProject
