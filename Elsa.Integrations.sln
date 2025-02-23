@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Slack.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Telnyx", "src\Elsa.Integrations.Telnyx\Elsa.Integrations.Telnyx.csproj", "{128B2FC3-81A7-4327-9665-9155B05F21DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.OrchardCore", "src\Elsa.Integrations.OrchardCore\Elsa.Integrations.OrchardCore.csproj", "{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,5 +67,6 @@ Global
 		{9732E404-11B5-48DB-B5D9-97997F018830} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{861E1230-F9CB-450C-845E-04DFDA259E26} = {A99FA26E-2098-403A-BD04-6BBCFBE3AC7D}
 		{128B2FC3-81A7-4327-9665-9155B05F21DA} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 	EndGlobalSection
 EndGlobal
