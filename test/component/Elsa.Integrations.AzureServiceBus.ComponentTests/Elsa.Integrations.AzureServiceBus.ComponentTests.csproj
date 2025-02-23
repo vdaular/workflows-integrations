@@ -7,7 +7,6 @@
 
     <ItemGroup>
         <PackageReference Include="Elsa.Alterations"/>
-        <PackageReference Include="Elsa.AzureServiceBus"/>
         <PackageReference Include="Elsa.EntityFrameworkCore"/>
         <PackageReference Include="Elsa.EntityFrameworkCore.PostgreSql"/>
         <PackageReference Include="Elsa.Http"/>
