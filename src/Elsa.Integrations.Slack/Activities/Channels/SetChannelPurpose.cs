@@ -21,19 +21,19 @@ public class SetChannelPurpose : SlackActivity
     /// The ID of the channel to set the purpose of.
     /// </summary>
     [Input(Name = "Channel Id", Description = "The ID of the channel to set the purpose of.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// The new purpose.
     /// </summary>
     [Input(Description = "The new purpose.")]
-    public Input<string> Purpose { get; set; } = default!;
+    public Input<string> Purpose { get; set; } = null!;
 
     /// <summary>
     /// The updated purpose.
     /// </summary>
     [Output(Description = "The updated purpose.")]
-    public Output<string> UpdatedPurpose { get; set; } = default!;
+    public Output<string> UpdatedPurpose { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

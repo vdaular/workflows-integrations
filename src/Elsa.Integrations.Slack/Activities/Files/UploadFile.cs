@@ -22,7 +22,7 @@ public class UploadFile : SlackActivity
     /// The file to upload.
     /// </summary>
     [Input(Description = "The file to upload.")]
-    public Input<FileUpload> File { get; set; } = default!;
+    public Input<FileUpload> File { get; set; } = null!;
 
     /// <summary>
     /// The channel ID where the file will be shared. If not specified the file will be private.
@@ -46,7 +46,7 @@ public class UploadFile : SlackActivity
     /// The reference to the uploaded file.
     /// </summary>
     [Output(Name = "File Reference", Description = "The reference to the uploaded file.")]
-    public Output<ExternalFileReference> FileReference { get; set; } = default!;
+    public Output<ExternalFileReference> FileReference { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

@@ -21,13 +21,13 @@ public class KickUser : SlackActivity
     /// The ID of the channel to remove the user from.
     /// </summary>
     [Input(Name = "Channel Id", Description = "The ID of the channel to remove the user from.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// The ID of the user to remove from channel.
     /// </summary>
     [Input(Name = "User Id", Description = "The ID of the user to remove from channel.")]
-    public Input<string> UserId { get; set; } = default!;
+    public Input<string> UserId { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

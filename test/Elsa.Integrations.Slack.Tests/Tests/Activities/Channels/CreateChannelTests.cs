@@ -10,6 +10,6 @@ public class CreateChannelTests
     /// <summary>
     /// Tests the activity by creating a new channel in a Slack workspace.
     /// </summary>
-    [Fact]
+    [Fact(Skip = "Not implemented yet.")]
     public void ExecuteAsync() => throw new NotImplementedException();
 }

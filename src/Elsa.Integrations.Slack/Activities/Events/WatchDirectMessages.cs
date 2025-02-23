@@ -18,7 +18,7 @@ namespace Elsa.Integrations.Slack.Activities.Events;
 public class WatchDirectMessages : SlackEventActivity
 {
     [Output(Description = "The received message.")]
-    public Output<Message> ReceivedMessage { get; set; } = default!;
+    public Output<Message> ReceivedMessage { get; set; } = null!;
 
     protected override async ValueTask ExecuteAsync(ActivityExecutionContext context)
     {

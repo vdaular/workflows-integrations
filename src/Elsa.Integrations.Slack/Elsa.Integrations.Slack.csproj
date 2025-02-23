@@ -8,9 +8,5 @@
         <PackageReference Include="Elsa" />
         <PackageReference Include="SlackNet" />
     </ItemGroup>
-    
-    <ItemGroup>
-      <Folder Include="Extensions\" />
-    </ItemGroup>
 
 </Project>

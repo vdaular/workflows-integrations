@@ -21,19 +21,19 @@ public class SetChannelTopic : SlackActivity
     /// The ID of the channel to set the topic of.
     /// </summary>
     [Input(Name = "Channel Id", Description = "The ID of the channel to set the topic of.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// The new topic.
     /// </summary>
     [Input(Description = "The new topic.")]
-    public Input<string> Topic { get; set; } = default!;
+    public Input<string> Topic { get; set; } = null!;
 
     /// <summary>
     /// The updated topic.
     /// </summary>
     [Output(Description = "The updated topic.")]
-    public Output<string> UpdatedTopic { get; set; } = default!;
+    public Output<string> UpdatedTopic { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

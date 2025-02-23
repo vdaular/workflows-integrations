@@ -21,13 +21,13 @@ public class CreateChannel : SlackActivity
     /// The name of the channel to create.
     /// </summary>
     [Input(Description = "The name of the channel to create.")]
-    public Input<string> ChannelName { get; set; } = default!;
+    public Input<string> ChannelName { get; set; } = null!;
 
     /// <summary>
     /// Whether to create the channel as private.
     /// </summary>
     [Input(Name = "Is Private", Description = "Whether to create the channel as private.")]
-    public Input<bool> IsPrivate { get; set; } = default!;
+    public Input<bool> IsPrivate { get; set; } = null!;
 
     /// <summary>
     /// The ID of the workspace.
@@ -39,7 +39,7 @@ public class CreateChannel : SlackActivity
     /// The created channel information.
     /// </summary>
     [Output(Description = "The created channel information.")]
-    public Output<Conversation> Channel { get; set; } = default!;
+    public Output<Conversation> Channel { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

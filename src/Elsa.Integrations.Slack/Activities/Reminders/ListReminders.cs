@@ -27,7 +27,7 @@ public class ListReminders : SlackActivity
     /// The list of reminders.
     /// </summary>
     [Output(Description = "The list of reminders.")]
-    public Output<IReadOnlyList<Reminder>> Reminders { get; set; } = default!;
+    public Output<IReadOnlyList<Reminder>> Reminders { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

@@ -21,13 +21,13 @@ public class SetStatus: SlackActivity
     /// The status text to set.
     /// </summary>
     [Input(Description = "The status text to set.")]
-    public Input<string> StatusText { get; set; } = default!;
+    public Input<string> StatusText { get; set; } = null!;
 
     /// <summary>
     /// The emoji to use for the status.
     /// </summary>
     [Input(Description = "The emoji to use for the status.")]
-    public Input<string> StatusEmoji { get; set; } = default!;
+    public Input<string> StatusEmoji { get; set; } = null!;
 
     /// <summary>
     /// Optional Unix timestamp for when the status should expire.

@@ -13,7 +13,7 @@ public abstract class SlackTriggerActivity : SlackActivity, ITrigger
     /// The ID of the bot user to filter out self-messages.
     /// </summary>
     [Input(Name = "Bot User Id", Description = "The ID of the bot user to filter out self-messages.")]
-    public Input<string> BotUserId { get; set; } = default!;
+    public Input<string> BotUserId { get; set; } = null!;
 
     /// <summary>
     /// The ID of the channel to listen for messages in.

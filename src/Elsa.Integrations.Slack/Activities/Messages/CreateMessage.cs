@@ -22,13 +22,13 @@ public class CreateMessage : SlackActivity
     /// The channel to send the message to.
     /// </summary>
     [Input(Description = "The channel to send the message to.")]
-    public Input<string> Channel { get; set; } = default!;
+    public Input<string> Channel { get; set; } = null!;
 
     /// <summary>
     /// The message text to send.
     /// </summary>
     [Input(Description = "The message text to send.")]
-    public Input<string> Text { get; set; } = default!;
+    public Input<string> Text { get; set; } = null!;
 
     /// <summary>
     /// Optional thread timestamp to reply to a thread.
@@ -46,7 +46,7 @@ public class CreateMessage : SlackActivity
     /// The timestamp of the sent message.
     /// </summary>
     [Output(Description = "The timestamp of the sent message.")]
-    public Output<string?> MessageTimestamp { get; set; } = default!;
+    public Output<string?> MessageTimestamp { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

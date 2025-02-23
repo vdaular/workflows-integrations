@@ -21,13 +21,13 @@ public class SearchForUser : SlackActivity
     /// The email address to search for.
     /// </summary>
     [Input(Description = "The email address to search for.")]
-    public Input<string> Email { get; set; } = default!;
+    public Input<string> Email { get; set; } = null!;
 
     /// <summary>
     /// The found user information.
     /// </summary>
     [Output(Description = "The found user information.")]
-    public Output<User> FoundUser { get; set; } = default!;
+    public Output<User> FoundUser { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

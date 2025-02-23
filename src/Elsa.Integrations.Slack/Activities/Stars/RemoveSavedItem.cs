@@ -21,13 +21,13 @@ public class RemoveSavedItem : SlackActivity
     /// Channel where the saved item is located.
     /// </summary>
     [Input(Name = "Channel Id", Description = "Channel where the saved item is located.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// Timestamp of the message to remove from saved items.
     /// </summary>
     [Input(Description = "Timestamp of the message to remove from saved items.")]
-    public Input<string> Timestamp { get; set; } = default!;
+    public Input<string> Timestamp { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

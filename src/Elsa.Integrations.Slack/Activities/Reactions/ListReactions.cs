@@ -22,13 +22,13 @@ public class ListReactions : SlackActivity
     /// The user to list reactions for.
     /// </summary>
     [Input(Name = "User Id", Description = "The user to list reactions for.")]
-    public Input<string> UserId { get; set; } = default!;
+    public Input<string> UserId { get; set; } = null!;
 
     /// <summary>
     /// The list of reactions made by the user.
     /// </summary>
     [Output(Name="User Reactions", Description="The list of reactions made by the user.")]
-    public Output<IList<ReactionItem>> UserReactions { get; set; } = default!;
+    public Output<IList<ReactionItem>> UserReactions { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

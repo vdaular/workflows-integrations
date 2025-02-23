@@ -21,7 +21,7 @@ public class LeaveChannel : SlackActivity
     /// The ID of the channel to leave.
     /// </summary>
     [Input(Name = "Channel Id", Description = "The ID of the channel to leave.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

@@ -22,19 +22,19 @@ public class UpdateMessage : SlackActivity
     /// The channel ID containing the message.
     /// </summary>
     [Input(Description = "The channel ID containing the message.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// The timestamp of the message to update.
     /// </summary>
     [Input(Description = "The timestamp of the message to update.")]
-    public Input<string> Timestamp { get; set; } = default!;
+    public Input<string> Timestamp { get; set; } = null!;
 
     /// <summary>
     /// The new text for the message.
     /// </summary>
     [Input(Description = "The new text for the message.")]
-    public Input<string> Text { get; set; } = default!;
+    public Input<string> Text { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

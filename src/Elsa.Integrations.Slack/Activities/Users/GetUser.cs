@@ -21,13 +21,13 @@ public class GetUser : SlackActivity
     /// The ID of the user to get information about.
     /// </summary>
     [Input(Description = "The ID of the user to get information about.")]
-    public Input<string> UserId { get; set; } = default!;
+    public Input<string> UserId { get; set; } = null!;
 
     /// <summary>
     /// The user information.
     /// </summary>
     [Output(Description = "The user information.")]
-    public Output<User> UserInfo { get; set; } = default!;
+    public Output<User> UserInfo { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

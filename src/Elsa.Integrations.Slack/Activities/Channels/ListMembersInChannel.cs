@@ -22,7 +22,7 @@ public class ListMembersInChannel : SlackActivity
     /// The ID of the channel to list members from.
     /// </summary>
     [Input(Name = "Channel Id", Description = "The ID of the channel to list members from.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// Number of members to return per page.
@@ -40,13 +40,13 @@ public class ListMembersInChannel : SlackActivity
     /// The list of member IDs in the channel.
     /// </summary>
     [Output(Description = "The list of member IDs in the channel.")]
-    public Output<IReadOnlyList<string>> MemberIds { get; set; } = default!;
+    public Output<IReadOnlyList<string>> MemberIds { get; set; } = null!;
 
     /// <summary>
     /// The cursor for the next page of results.
     /// </summary>
     [Output(Name = "Next Cursor", Description = "The cursor for the next page of results.")]
-    public Output<string?> NextCursor { get; set; } = default!;
+    public Output<string?> NextCursor { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

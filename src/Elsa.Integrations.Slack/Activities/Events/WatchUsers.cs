@@ -21,7 +21,7 @@ public class WatchUsers : SlackEventActivity
     /// The user that was added or changed.
     /// </summary>
     [Output(Description = "The user that was added or changed.")]
-    public Output<User> ChangedUser { get; set; } = default!;
+    public Output<User> ChangedUser { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

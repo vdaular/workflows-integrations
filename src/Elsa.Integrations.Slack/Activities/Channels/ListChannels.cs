@@ -22,7 +22,7 @@ public class ListChannels : SlackActivity
     /// Set to true to exclude archived channels from the list.
     /// </summary>
     [Input(Name = "Exclude Archived", Description = "Set to true to exclude archived channels from the list.")]
-    public Input<bool> ExcludeArchived { get; set; } = default!;
+    public Input<bool> ExcludeArchived { get; set; } = null!;
 
     /// <summary>
     /// Number of channels to return per page.
@@ -40,13 +40,13 @@ public class ListChannels : SlackActivity
     /// The list of channels.
     /// </summary>
     [Output(Description = "The list of channels.")]
-    public Output<IReadOnlyList<Conversation>> Channels { get; set; } = default!;
+    public Output<IReadOnlyList<Conversation>> Channels { get; set; } = null!;
 
     /// <summary>
     /// The cursor for the next page of results.
     /// </summary>
     [Output(Name = "Next Cursor", Description = "The cursor for the next page of results.")]
-    public Output<string?> NextCursor { get; set; } = default!;
+    public Output<string?> NextCursor { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

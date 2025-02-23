@@ -22,7 +22,7 @@ public class ListUsers : SlackActivity
     /// The list of users in the workspace.
     /// </summary>
     [Output(Description = "The list of users in the workspace.")]
-    public Output<IList<User>> Users { get; set; } = default!;
+    public Output<IList<User>> Users { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

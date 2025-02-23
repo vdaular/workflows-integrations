@@ -21,13 +21,13 @@ public class SaveItem : SlackActivity
     /// Channel where the item is located.
     /// </summary>
     [Input(Name = "Channel Id", Description = "Channel where the item is located.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// Timestamp of the message to save.
     /// </summary>
     [Input(Description = "Timestamp of the message to save.")]
-    public Input<string> Timestamp { get; set; } = default!;
+    public Input<string> Timestamp { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

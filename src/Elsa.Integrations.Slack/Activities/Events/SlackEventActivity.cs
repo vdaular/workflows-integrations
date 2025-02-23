@@ -9,5 +9,5 @@ namespace Elsa.Integrations.Slack.Activities.Events;
 public abstract class SlackEventActivity : SlackActivity
 {
     [Input(Name = "Bot User Id", Description = "The ID of the bot user to filter out self-messages.")]
-    public Input<string> BotUserId { get; set; } = default!;
+    public Input<string> BotUserId { get; set; } = null!;
 }

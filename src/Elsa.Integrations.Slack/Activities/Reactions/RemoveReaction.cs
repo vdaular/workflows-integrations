@@ -22,19 +22,19 @@ public class RemoveReaction : SlackActivity
     /// The name of the emoji to remove.
     /// </summary>
     [Input(Description = "The name of the emoji to remove.")]
-    public Input<string> Emoji { get; set; } = default!;
+    public Input<string> Emoji { get; set; } = null!;
 
     /// <summary>
     /// The channel containing the message.
     /// </summary>
     [Input(Description = "The channel containing the message.")]
-    public Input<string> Channel { get; set; } = default!;
+    public Input<string> Channel { get; set; } = null!;
 
     /// <summary>
     /// The timestamp of the message.
     /// </summary>
     [Input(Description = "The timestamp of the message.")]
-    public Input<string> Timestamp { get; set; } = default!;
+    public Input<string> Timestamp { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

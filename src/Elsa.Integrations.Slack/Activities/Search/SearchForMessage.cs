@@ -22,7 +22,7 @@ public class SearchForMessage : SlackActivity
     /// The search query.
     /// </summary>
     [Input(Description = "Search query - can include modifiers like 'in:#channel', 'from:@user', etc.")]
-    public Input<string> Query { get; set; } = default!;
+    public Input<string> Query { get; set; } = null!;
 
     /// <summary>
     /// Number of results to return per page.
@@ -40,7 +40,7 @@ public class SearchForMessage : SlackActivity
     /// The search results.
     /// </summary>
     [Output(Description = "The search results.")]
-    public Output<SearchResults<MessageSearchResult>> Results { get; set; } = default!;
+    public Output<SearchResults<MessageSearchResult>> Results { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

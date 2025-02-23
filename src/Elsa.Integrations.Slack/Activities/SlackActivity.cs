@@ -15,7 +15,7 @@ public abstract class SlackActivity : Activity
     /// The Slack API token.
     /// </summary>
     [Input(Description = "The Slack API token.")]
-    public Input<string> Token { get; set; } = default!;
+    public Input<string> Token { get; set; } = null!;
 
     /// <summary>
     /// Gets the Slack API client.

@@ -21,13 +21,13 @@ public class GetChannel : SlackActivity
     /// The ID of the channel to get information about.
     /// </summary>
     [Input(Name = "Channel Id", Description = "The ID of the channel to get information about.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// The channel information.
     /// </summary>
     [Output(Description = "The channel information.")]
-    public Output<Conversation> Channel { get; set; } = default!;
+    public Output<Conversation> Channel { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

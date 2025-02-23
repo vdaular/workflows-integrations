@@ -21,13 +21,13 @@ public class WatchPublicChannelMessages : SlackEventActivity
     /// The ID of the public channel to watch.
     /// </summary>
     [Input(Name = "Channel Id", Description = "The ID of the public channel to watch.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// The received message.
     /// </summary>
     [Output(Description = "The received message.")]
-    public Output<Message> ReceivedMessage { get; set; } = default!;
+    public Output<Message> ReceivedMessage { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

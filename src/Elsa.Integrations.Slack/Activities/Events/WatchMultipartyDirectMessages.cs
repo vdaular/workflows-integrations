@@ -21,7 +21,7 @@ public class WatchMultipartyDirectMessages : SlackEventActivity
     /// The received message.
     /// </summary>
     [Output(Description = "The received message.")]
-    public Output<Message> ReceivedMessage { get; set; } = default!;
+    public Output<Message> ReceivedMessage { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

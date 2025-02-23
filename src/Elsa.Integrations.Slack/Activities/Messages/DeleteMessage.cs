@@ -21,13 +21,13 @@ public class DeleteMessage : SlackActivity
     /// The channel containing the message.
     /// </summary>
     [Input(Description = "The channel containing the message.")]
-    public Input<string> Channel { get; set; } = default!;
+    public Input<string> Channel { get; set; } = null!;
 
     /// <summary>
     /// The timestamp of the message to delete.
     /// </summary>
     [Input(Description = "The timestamp of the message to delete.")]
-    public Input<string> Timestamp { get; set; } = default!;
+    public Input<string> Timestamp { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

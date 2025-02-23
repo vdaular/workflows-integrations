@@ -23,19 +23,19 @@ public class GetChannelMessage : SlackActivity
     /// The ID of the private channel containing the message.
     /// </summary>
     [Input(Name = "Channel Id", Description = "The ID of the private channel containing the message.")]
-    public Input<string> ChannelId { get; set; } = default!;
+    public Input<string> ChannelId { get; set; } = null!;
 
     /// <summary>
     /// Timestamp of the message to retrieve.
     /// </summary>
     [Input(Name = "Message Timestamp", Description = "Timestamp of the message to retrieve.")]
-    public Input<string> MessageTs { get; set; } = default!;
+    public Input<string> MessageTs { get; set; } = null!;
 
     /// <summary>
     /// The retrieved message.
     /// </summary>
     [Output(Description = "The retrieved message.")]
-    public Output<Message> Message { get; set; } = default!;
+    public Output<Message> Message { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

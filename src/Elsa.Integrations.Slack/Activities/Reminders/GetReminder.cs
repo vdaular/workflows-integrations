@@ -21,13 +21,13 @@ public class GetReminder : SlackActivity
     /// The ID of the reminder to get information about.
     /// </summary>
     [Input(Name = "Reminder Id", Description = "The ID of the reminder to get information about.")]
-    public Input<string> ReminderId { get; set; } = default!;
+    public Input<string> ReminderId { get; set; } = null!;
 
     /// <summary>
     /// The reminder information.
     /// </summary>
     [Output(Name = "Reminder Info", Description = "The reminder information.")]
-    public Output<Reminder> ReminderInfo { get; set; } = default!;
+    public Output<Reminder> ReminderInfo { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

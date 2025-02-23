@@ -21,13 +21,13 @@ public class CreateReminder : SlackActivity
     /// The text of the reminder.
     /// </summary>
     [Input(Description = "The text of the reminder.")]
-    public Input<string> Text { get; set; } = default!;
+    public Input<string> Text { get; set; } = null!;
 
     /// <summary>
     /// When this reminder should happen: the Unix timestamp (up to 5 years from now), or a natural language description (e.g. 'in 15 minutes' or 'every Thursday at 3pm').
     /// </summary>
     [Input(Description = "When this reminder should happen: the Unix timestamp (up to 5 years from now), or a natural language description (e.g. 'in 15 minutes' or 'every Thursday at 3pm').")]
-    public Input<string> Time { get; set; } = default!;
+    public Input<string> Time { get; set; } = null!;
 
     /// <summary>
     /// The user who will receive this reminder. If not specified, defaults to the authed user.
@@ -39,7 +39,7 @@ public class CreateReminder : SlackActivity
     /// The ID of the created reminder.
     /// </summary>
     [Output(Name = "Reminder Id", Description = "The ID of the created reminder.")]
-    public Output<string> ReminderId { get; set; } = default!;
+    public Output<string> ReminderId { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

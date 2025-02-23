@@ -21,7 +21,7 @@ public class WatchFiles : SlackEventActivity
     /// The added file.
     /// </summary>
     [Output(Description = "The added file.")]
-    public Output<File> AddedFile { get; set; } = default!;
+    public Output<File> AddedFile { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.

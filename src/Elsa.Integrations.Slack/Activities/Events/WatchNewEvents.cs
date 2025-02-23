@@ -21,7 +21,7 @@ public class WatchNewEvents : SlackEventActivity
     /// The received event.
     /// </summary>
     [Output(Description = "The received event.")]
-    public Output<Event> ReceivedEvent { get; set; } = default!;
+    public Output<Event> ReceivedEvent { get; set; } = null!;
 
     /// <summary>
     /// Executes the activity.
