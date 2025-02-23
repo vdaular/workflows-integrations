@@ -12,9 +12,10 @@ Below is the current status of each integration. Checkboxes indicate implementat
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
 | [ ] | **Telegram** | Send & receive messages, file downloads | `Elsa.Integrations.Telegram` |  |
-| [ ] | **Slack** | Channel messages, user notifications | `Elsa.Integrations.Slack` | |
+| [x] | **Slack** | Channel messages, user notifications | `Elsa.Integrations.Slack` | |
 | [ ] | **Discord** | Bot commands, message triggers | `Elsa.Integrations.Discord` | |
 | [ ] | **Microsoft Teams** | Chat automation, meeting reminders | `Elsa.Integrations.Teams` | |
+| [x] | **Telnyx** | Telephony automation | `Elsa.Integrations.Telnyx` | |
 
 ### 📧 Email & Productivity
 | Status | Integration | Description | Module Name | Issue |
