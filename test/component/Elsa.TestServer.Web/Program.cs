@@ -17,8 +17,8 @@ services
     .AddElsa(elsa =>
     {
         elsa
-            .AddActivitiesFrom<Program>()
-            .AddWorkflowsFrom<Program>()
+            .AddActivitiesFrom<Elsa.TestServer.Web.Program>()
+            .AddWorkflowsFrom<Elsa.TestServer.Web.Program>()
             .UseIdentity(identity =>
             {
                 identity.TokenOptions = options => identityTokenSection.Bind(options);
@@ -31,7 +31,7 @@ services
             .UseWorkflowRuntime()
             .UseWorkflowsApi(api =>
             {
-                api.AddFastEndpointsAssembly<Program>();
+                api.AddFastEndpointsAssembly<Elsa.TestServer.Web.Program>();
             })
             .UseJavaScript(options =>
             {
@@ -44,7 +44,7 @@ services
                 http.UseCache();
             });
 
-        ConfigureForTest?.Invoke(elsa);
+        Elsa.TestServer.Web.Program.ConfigureForTest?.Invoke(elsa);
     });
 
 services.AddHealthChecks();
@@ -92,14 +92,17 @@ if (app.Environment.IsDevelopment())
 // Run.
 await app.RunAsync();
 
-/// <summary>
-/// The main entry point for the application made public for end to end testing.
-/// </summary>
-[UsedImplicitly]
-public partial class Program
+namespace Elsa.TestServer.Web
 {
     /// <summary>
-    /// Set by the test runner to configure the module for testing.
+    /// The main entry point for the application made public for end to end testing.
     /// </summary>
-    public static Action<IModule>? ConfigureForTest { get; set; }
+    [UsedImplicitly]
+    public partial class Program
+    {
+        /// <summary>
+        /// Set by the test runner to configure the module for testing.
+        /// </summary>
+        public static Action<IModule>? ConfigureForTest { get; set; }
+    }
 }
