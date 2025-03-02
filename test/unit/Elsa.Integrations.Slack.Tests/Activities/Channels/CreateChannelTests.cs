@@ -1,6 +1,6 @@
 using Elsa.Integrations.Slack.Activities.Channels;
 
-namespace Elsa.Integrations.Tests.Slack.Activities.Channels;
+namespace Elsa.Integrations.Slack.Tests.Activities.Channels;
 
 /// <summary>
 /// Contains tests for the <see cref="CreateChannel"/> activity.

@@ -11,6 +11,7 @@ using Elsa.Integrations.AzureServiceBus.ComponentTests.Extensions;
 using Elsa.MassTransit.Extensions;
 using Elsa.Testing.Shared.Handlers;
 using Elsa.Testing.Shared.Services;
+using Elsa.TestServer.Web;
 using FluentStorage;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Hosting;

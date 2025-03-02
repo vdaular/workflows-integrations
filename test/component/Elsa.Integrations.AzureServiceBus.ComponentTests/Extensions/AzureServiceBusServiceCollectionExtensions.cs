@@ -77,6 +77,6 @@ public static class AzureServiceBusServiceCollectionExtensions
             properties: props
         );
 
-        return new ProcessMessageEventArgs(message, null, new CancellationToken());
+        return new ProcessMessageEventArgs(message, null, CancellationToken.None);
     }
 }
