@@ -86,6 +86,7 @@ Below is the current status of each integration. Checkboxes indicate implementat
 |--------|------------|-------------|-------------|-------|
 | [ ] | **OPC UA** | Browse nodes, Read/Write values, Subscribe/Unsubscribe nodes | `Elsa.Integrations.OPC.UA` | |
 | [ ] | **Modbus** | Read/Write coils, Read discrete Inputs, Read/Write registers | `Elsa.Integrations.Modbus` | |
+| [ ] | **MQTT Sparkplug** | Discover and Subscribe to topics, Publish messages | `Elsa.Integrations.MQTT.Sparkplug` | |
 ---
 
 ## 📦 Structure
