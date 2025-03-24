@@ -11,8 +11,4 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
     </ItemGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.csproj" />
-    </ItemGroup>
-
 </Project>
