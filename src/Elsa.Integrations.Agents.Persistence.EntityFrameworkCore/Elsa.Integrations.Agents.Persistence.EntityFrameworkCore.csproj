@@ -8,9 +8,5 @@
     <ItemGroup>
         <PackageReference Include="Elsa.EntityFrameworkCore.Common" />
     </ItemGroup>
-    
-    <ItemGroup>
-        <ProjectReference Include="..\Elsa.Integrations.Agents.Persistence\Elsa.Integrations.Agents.Persistence.csproj" />
-    </ItemGroup>
 
 </Project>

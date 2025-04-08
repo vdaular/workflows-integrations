@@ -6,12 +6,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Elsa.Api.Common"/>
+        <PackageReference Include="Elsa.Api.Common" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Elsa.Integrations.Agents.Activities\Elsa.Integrations.Agents.Activities.csproj"/>
-        <ProjectReference Include="..\Elsa.Integrations.Agents.Persistence\Elsa.Integrations.Agents.Persistence.csproj"/>
+        <ProjectReference Include="..\Elsa.Integrations.Agents.Persistence\Elsa.Integrations.Agents.Persistence.csproj" />
     </ItemGroup>
 
 </Project>
