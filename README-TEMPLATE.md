@@ -15,18 +15,36 @@ For convenience, you can search and replace the following keywords for quicker b
 | [CompatibleVersion] | Version the integration works with | V3 |
 
 ## 📦 Integration Structure
-Each integration should be organized into its own folder. Copy this README template file into the root of your integration's directory and rename it to `README.md`. For example:
+Each integration should be organized into its own category folder.
+Copy this README template file into the root of your integration's directory or project and rename it to `README.md`.
+For example:
 ```
-[integration-name]/
+[category-name]/
   ├── README.md
   ├── Elsa.Integrations.[integration-name]/
   │   ├── Services/
   │   ├── Activities/
   │   ├── AI/
-  └── Elsa.Integrations.[integration-name].Implementation/
+  └── Elsa.Integrations.[integration-name].Implementation1/
       ├── Services/
       ├── Activities/
       ├── AI/
+      ...
+
+OR
+
+[category-name]/
+  ├── Elsa.Integrations.[integration-name].Implementation1/
+  │   ├── README.md
+  │   ├── Services/
+  │   ├── Activities/
+  │   ├── AI/
+  └── Elsa.Integrations.[integration-name].Implementation2/
+      ├── README.md
+      ├── Services/
+      ├── Activities/
+      ├── AI/
+      ...
 ```
 
 
