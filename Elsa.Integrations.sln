@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{DE
 		icon.png = icon.png
 		LICENSE = LICENSE
 		NuGet.Config = NuGet.Config
+		README-TEMPLATE.md = README-TEMPLATE.md
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -78,6 +79,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.SqlServer", "src\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.SqlServer\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.SqlServer.csproj", "{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		src\sql\README.md = src\sql\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Sql", "src\sql\Elsa.Integrations.Sql\Elsa.Integrations.Sql.csproj", "{C28570E2-EE0E-CE53-CB56-7927CAB23E1E}"
 EndProject
