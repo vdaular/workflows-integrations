@@ -8,8 +8,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{527248D6-B85
 		src\Directory.Build.props = src\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.AzureStorage", "src\Elsa.Integrations.AzureStorage\Elsa.Integrations.AzureStorage.csproj", "{A8666FC4-66E1-4766-A22B-C410D42D03DD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{DE39E491-5DDC-40F4-91D5-7F5FAF0E1884}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -31,8 +29,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Telnyx", "src\Elsa.Integrations.Telnyx\Elsa.Integrations.Telnyx.csproj", "{128B2FC3-81A7-4327-9665-9155B05F21DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.OrchardCore", "src\Elsa.Integrations.OrchardCore\Elsa.Integrations.OrchardCore.csproj", "{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.AzureServiceBus", "src\Elsa.Integrations.AzureServiceBus\Elsa.Integrations.AzureServiceBus.csproj", "{BC283CFE-D542-4D40-AE7F-6888B876AA2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{D0212324-351E-4CA6-95EE-27754B5367CC}"
 EndProject
@@ -95,16 +91,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "slack", "slack", "{AD4F2AD8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Slack", "src\slack\Elsa.Integrations.Slack\Elsa.Integrations.Slack.csproj", "{1B26082A-070B-4E1F-773F-9A7DD6170A98}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azure", "azure", "{45B793EC-7BFF-45C0-BD0E-2D1601C8D01E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.AzureServiceBus", "src\azure\Elsa.Integrations.AzureServiceBus\Elsa.Integrations.AzureServiceBus.csproj", "{098825FF-A9AB-4888-E8B7-A796774C210B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.AzureStorage", "src\azure\Elsa.Integrations.AzureStorage\Elsa.Integrations.AzureStorage.csproj", "{CA62F376-8144-19CD-65F4-E346C2E53F4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A8666FC4-66E1-4766-A22B-C410D42D03DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8666FC4-66E1-4766-A22B-C410D42D03DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8666FC4-66E1-4766-A22B-C410D42D03DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8666FC4-66E1-4766-A22B-C410D42D03DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -113,10 +111,6 @@ Global
 		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -197,15 +191,21 @@ Global
 		{1B26082A-070B-4E1F-773F-9A7DD6170A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B26082A-070B-4E1F-773F-9A7DD6170A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B26082A-070B-4E1F-773F-9A7DD6170A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{098825FF-A9AB-4888-E8B7-A796774C210B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098825FF-A9AB-4888-E8B7-A796774C210B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098825FF-A9AB-4888-E8B7-A796774C210B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098825FF-A9AB-4888-E8B7-A796774C210B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA62F376-8144-19CD-65F4-E346C2E53F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA62F376-8144-19CD-65F4-E346C2E53F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA62F376-8144-19CD-65F4-E346C2E53F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA62F376-8144-19CD-65F4-E346C2E53F4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A8666FC4-66E1-4766-A22B-C410D42D03DD} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{128B2FC3-81A7-4327-9665-9155B05F21DA} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{71D93DC7-A455-4EDC-86DB-826CCEECEEF8} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
-		{BC283CFE-D542-4D40-AE7F-6888B876AA2B} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{3948BAF0-023F-4B43-8E77-56C3B00C6EFD} = {D0212324-351E-4CA6-95EE-27754B5367CC}
 		{AF041BAE-B45A-428B-B7F5-921CCB895558} = {A99FA26E-2098-403A-BD04-6BBCFBE3AC7D}
 		{60461F37-79E1-4EBB-8742-9F6578C6A745} = {A99FA26E-2098-403A-BD04-6BBCFBE3AC7D}
@@ -230,6 +230,9 @@ Global
 		{80692FAE-701B-F877-198B-2B93A428B0C0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{AD4F2AD8-ADFB-40A4-B39E-15EE3544587F} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{1B26082A-070B-4E1F-773F-9A7DD6170A98} = {AD4F2AD8-ADFB-40A4-B39E-15EE3544587F}
+		{45B793EC-7BFF-45C0-BD0E-2D1601C8D01E} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{098825FF-A9AB-4888-E8B7-A796774C210B} = {45B793EC-7BFF-45C0-BD0E-2D1601C8D01E}
+		{CA62F376-8144-19CD-65F4-E346C2E53F4C} = {45B793EC-7BFF-45C0-BD0E-2D1601C8D01E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}
