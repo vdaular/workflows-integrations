@@ -26,8 +26,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A99FA26E-2
 		test\Directory.Build.props = test\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Telnyx", "src\Elsa.Integrations.Telnyx\Elsa.Integrations.Telnyx.csproj", "{128B2FC3-81A7-4327-9665-9155B05F21DA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{D0212324-351E-4CA6-95EE-27754B5367CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{3948BAF0-023F-4B43-8E77-56C3B00C6EFD}"
@@ -99,16 +97,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "orchardcore", "orchardcore"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.OrchardCore", "src\orchardcore\Elsa.Integrations.OrchardCore\Elsa.Integrations.OrchardCore.csproj", "{C1929745-1160-E32A-FE78-AD09FDBA05B7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "telnyx", "telnyx", "{D71D34D1-91B0-463F-84A4-3117CE4BBED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Telnyx", "src\telnyx\Elsa.Integrations.Telnyx\Elsa.Integrations.Telnyx.csproj", "{C61EF9E3-807F-42D8-2C6E-EA155EABBD49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{128B2FC3-81A7-4327-9665-9155B05F21DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -201,12 +199,15 @@ Global
 		{C1929745-1160-E32A-FE78-AD09FDBA05B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1929745-1160-E32A-FE78-AD09FDBA05B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1929745-1160-E32A-FE78-AD09FDBA05B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61EF9E3-807F-42D8-2C6E-EA155EABBD49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61EF9E3-807F-42D8-2C6E-EA155EABBD49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61EF9E3-807F-42D8-2C6E-EA155EABBD49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61EF9E3-807F-42D8-2C6E-EA155EABBD49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{128B2FC3-81A7-4327-9665-9155B05F21DA} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{3948BAF0-023F-4B43-8E77-56C3B00C6EFD} = {D0212324-351E-4CA6-95EE-27754B5367CC}
 		{AF041BAE-B45A-428B-B7F5-921CCB895558} = {A99FA26E-2098-403A-BD04-6BBCFBE3AC7D}
 		{60461F37-79E1-4EBB-8742-9F6578C6A745} = {A99FA26E-2098-403A-BD04-6BBCFBE3AC7D}
@@ -236,6 +237,8 @@ Global
 		{CA62F376-8144-19CD-65F4-E346C2E53F4C} = {45B793EC-7BFF-45C0-BD0E-2D1601C8D01E}
 		{AAD61D93-7C78-42C4-9F37-2564D127A668} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{C1929745-1160-E32A-FE78-AD09FDBA05B7} = {AAD61D93-7C78-42C4-9F37-2564D127A668}
+		{D71D34D1-91B0-463F-84A4-3117CE4BBED6} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{C61EF9E3-807F-42D8-2C6E-EA155EABBD49} = {D71D34D1-91B0-463F-84A4-3117CE4BBED6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}
