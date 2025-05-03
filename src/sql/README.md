@@ -160,7 +160,19 @@ Will be converted into:
 SELECT * FROM [Users] WHERE [Name] = @p1 AND [Age] > @p2;
 ```
 
-Before being executed with the properties values.
+
+### Supported Expressions
+
+```csharp
+{{Workflow.Definition.Id}}
+{{Workflow.Definition.Version}}
+{{Workflow.Instance.Id}} 
+{{Correlation.Id}}
+{{LastResult}} 
+{{Input.<InputName>}}
+{{Output.<OutputName>}}
+{{Variable.<VariableName>}}
+```
 
 ---
 
