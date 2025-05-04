@@ -87,41 +87,20 @@ Below is the current status of each integration. Checkboxes indicate implementat
 | [ ] | **OPC UA** | Browse nodes, Read/Write values, Subscribe/Unsubscribe nodes | `Elsa.Integrations.OPC.UA` | |
 | [ ] | **Modbus** | Read/Write coils, Read discrete Inputs, Read/Write registers | `Elsa.Integrations.Modbus` | |
 | [ ] | **MQTT Sparkplug** | Discover and Subscribe to topics, Publish messages | `Elsa.Integrations.MQTT.Sparkplug` | |
-
 ---
 
 ## 📦 Structure
 Each integration is structured as a standalone package under the `Elsa.Integrations` namespace. Example:
 
-
-```plaintext
-...
-├─azure/
-│   ├── Elsa.Integrations.AzureServiceBus/
-│   │   ├── README.md
-│   │   ├── Services/
-│   │   ├── Activities/
-│   │   ├── AI/
-│   │   └── ...
-│   └── Elsa.Integrations.AzureStorage/
-│       ├── README.md
-│       ├── Services/
-│       ├── Activities/
-│       ├── AI/
-│       └── ...
-├─sql/
-│   ├── README.md
-│   ├── Elsa.Integrations.Sql/
-│   │   ├── Services/
-│   │   ├── Activities/
-│   │   ├── AI/
-│   │   └── ...
-│   └── Elsa.Integrations.Sql.Sqlite/
-│       ├── Services/
-│       ├── Activities/
-│       ├── AI/
-│       └── ...
-...
+```
+Elsa.Integrations.Gmail/
+  ├── Services/
+  ├── Activities/
+  ├── AI/
+Elsa.Integrations.Telegram/
+  ├── Services/
+  ├── Activities/
+  ├── AI/
 ```
 
 ## ⚡ Getting Started
