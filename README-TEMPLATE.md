@@ -15,9 +15,9 @@ For convenience, you can search and replace the following keywords for quicker b
 | [CompatibleVersion] | Version the integration works with | V3 |
 
 ## 📦 Integration Structure
-Each integration should be organized into its own folder. Copy this README template file into the root of your integration's directory and rename it to `README.md`. For example:
+Each integration should be organized into its own group folder. Copy this README template file into the root of your integration's directory and rename it to `README.md`. For example:
 ```
-[integration-name]/
+[group-name]/
   ├── README.md
   ├── Elsa.Integrations.[integration-name]/
   │   ├── Services/
@@ -126,13 +126,11 @@ services.AddElsa(elsa =>
 Or via `appsettings.json`:
 
 ```json
-"Elsa": {
-  "[integration-name]": {
+"[integration-name]": {
     "Property1": "value1",
     "Config": {
         "Property2": "value2"
     }
-  }
 }
 ```
 
