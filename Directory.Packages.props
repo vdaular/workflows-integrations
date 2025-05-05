@@ -16,6 +16,7 @@
     <PackageVersion Include="ConfigureAwait.Fody" Version="3.3.2" />
     <PackageVersion Include="coverlet.collector" Version="6.0.4" />
     <PackageVersion Include="Elsa" Version="3.4.0-preview.2684" />
+    <PackageVersion Include="Elsa.Agents.Models" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.Alterations" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.Api.Common" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.Common" Version="3.4.0-preview.2684" />
@@ -27,6 +28,7 @@
     <PackageVersion Include="Elsa.EntityFrameworkCore.PostgreSql" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.Features" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.JavaScript" Version="3.4.0-preview.2684" />
+    <PackageVersion Include="Elsa.Studio.Workflows" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.Workflows.Core" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.Workflows.Api" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.Http" Version="3.4.0-preview.2684" />
