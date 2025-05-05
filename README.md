@@ -17,7 +17,7 @@ Below is the current status of each integration. Icons indicate implementation p
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
 | 🔲 | **Telegram** | Send & receive messages, file downloads | `Elsa.Integrations.Telegram` | [Open Issue](https://github.com/elsa-workflows/elsa-integrations/issues/new) |
-| [✅]( https://github.com/elsa-workflows/elsa-integrations/tree/main/src/slack/Elsa.Integrations.Slack) | **Slack** | Channel messages, user notifications | `Elsa.Integrations.Slack` | [View Issue](https://github.com/elsa-workflows/elsa-integrations/issues/#26) |
+| [✅]( https://github.com/elsa-workflows/elsa-integrations/tree/main/src/slack/Elsa.Integrations.Slack) | **Slack** | Channel messages, user notifications | `Elsa.Integrations.Slack` | [View Issue](https://github.com/elsa-workflows/elsa-integrations/issues/26) |
 | 🔲 | **Discord** | Bot commands, message triggers | `Elsa.Integrations.Discord` | [Open Issue](https://github.com/elsa-workflows/elsa-integrations/issues/new) |
 | 🔲 | **Microsoft Teams** | Chat automation, meeting reminders | `Elsa.Integrations.Teams` | [Open Issue](https://github.com/elsa-workflows/elsa-integrations/issues/new) |
 | [✅](https://github.com/elsa-workflows/elsa-integrations/tree/main/src/telnyx/Elsa.Integrations.Telnyx) | **Telnyx** | Telephony automation | `Elsa.Integrations.Telnyx` | [Open Issue](https://github.com/elsa-workflows/elsa-integrations/issues/new) |
