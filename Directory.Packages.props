@@ -3,34 +3,34 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
-	<ItemGroup Label="Elsa">
-		<PackageVersion Include="Elsa" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Agents.Models" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Alterations" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Api.Common" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Common" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.EntityFrameworkCore" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.EntityFrameworkCore.Common" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.EntityFrameworkCore.MySql" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.EntityFrameworkCore.Sqlite" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.EntityFrameworkCore.SqlServer" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.EntityFrameworkCore.PostgreSql" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Features" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.JavaScript" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Workflows.Core" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Http" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Identity" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.MassTransit" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.MassTransit.RabbitMq" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Webhooks" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)" />
-		<PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
-	</ItemGroup>
+  <ItemGroup Label="Elsa">
+    <PackageVersion Include="Elsa" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Agents.Models" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Alterations" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Api.Common" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Common" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.EntityFrameworkCore" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.EntityFrameworkCore.Common" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.EntityFrameworkCore.MySql" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.EntityFrameworkCore.Sqlite" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.EntityFrameworkCore.SqlServer" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.EntityFrameworkCore.PostgreSql" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Features" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.JavaScript" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
+    <PackageVersion Include="Elsa.Workflows.Core" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Http" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Identity" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.MassTransit" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.MassTransit.RabbitMq" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Webhooks" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
+  </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="Azure.Identity" Version="1.13.2" />
     <PackageVersion Include="Azure.Messaging.ServiceBus" Version="7.19.0" />
@@ -52,25 +52,25 @@
     <PackageVersion Include="JetBrains.Annotations" Version="2024.3.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.12.0" />
     <PackageVersion Include="Microsoft.Data.SqlClient" Version="6.0.2" />
-	<PackageVersion Include="Microsoft.Data.Sqlite" Version="9.0.4" />
-	<PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4" />
-	<PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.Data.Sqlite" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.4" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.6" />
-	<PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
-	<PackageVersion Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.4" />
-	<PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
-	<PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.4" />
-	<PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.4" />
-	<PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.4" />
-	<PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="9.0.4" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
     <PackageVersion Include="Microsoft.SemanticKernel" Version="1.49.0" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="MySql.Data" Version="9.3.0" />
     <PackageVersion Include="Npgsql" Version="9.0.3" />
-	<PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
     <PackageVersion Include="NSubstitute" Version="5.3.0" />
-	<PackageVersion Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0-preview.3.efcore.9.0.0" />
+    <PackageVersion Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0-preview.3.efcore.9.0.0" />
     <PackageVersion Include="Refit" Version="8.0.0" />
     <PackageVersion Include="Refit.HttpClientFactory" Version="8.0.0" />
     <PackageVersion Include="SlackNet" Version="0.16.1" />
@@ -84,7 +84,7 @@
     <PackageVersion Include="xunit.extensibility.core" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.0" />
     <PackageVersion Include="System.Linq.Async" Version="6.0.1" />
-	  <PackageVersion Include="System.Text.Json" Version="9.0.4" />
+    <PackageVersion Include="System.Text.Json" Version="9.0.4" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
     <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.15" />
