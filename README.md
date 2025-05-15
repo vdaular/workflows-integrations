@@ -1,6 +1,6 @@
-# Elsa Integrations
+# Elsa Extensions
 
-Welcome to the **Elsa Integrations** repository! This project provides a collection of integration modules for [Elsa Workflows](https://github.com/elsa-workflows/elsa-core), enabling seamless workflow automation across various third-party services.
+Welcome to the **Elsa Extensions** repository! This project provides a collection of extension modules for [Elsa Workflows](https://github.com/elsa-workflows/elsa-core), enabling seamless workflow automation across various third-party services.
 
 ---
 
