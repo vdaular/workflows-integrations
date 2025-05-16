@@ -115,6 +115,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.ServiceBus.MassTransit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.ServiceBus.MassTransit.RabbitMq", "src\servicebus\Elsa.ServiceBus.MassTransit.RabbitMq\Elsa.ServiceBus.MassTransit.RabbitMq.csproj", "{BB81E01D-7453-9068-B1E3-90E3072C820B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "alterations", "alterations", "{F670C86F-ACDA-4549-B9E1-E530B1ED5538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Alterations.Core", "src\alterations\Elsa.Alterations.Core\Elsa.Alterations.Core.csproj", "{5D17BB88-130E-3A6E-CC4C-5DBB10C6C78F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Alterations", "src\alterations\Elsa.Alterations\Elsa.Alterations.csproj", "{492E9E6D-403E-E473-F3CC-4CEBA57448FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Alterations.MassTransit", "src\alterations\Elsa.Alterations.MassTransit\Elsa.Alterations.MassTransit.csproj", "{95C8EFEE-9396-F334-9B76-78322650A0C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +245,18 @@ Global
 		{BB81E01D-7453-9068-B1E3-90E3072C820B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB81E01D-7453-9068-B1E3-90E3072C820B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB81E01D-7453-9068-B1E3-90E3072C820B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D17BB88-130E-3A6E-CC4C-5DBB10C6C78F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D17BB88-130E-3A6E-CC4C-5DBB10C6C78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D17BB88-130E-3A6E-CC4C-5DBB10C6C78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D17BB88-130E-3A6E-CC4C-5DBB10C6C78F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{492E9E6D-403E-E473-F3CC-4CEBA57448FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492E9E6D-403E-E473-F3CC-4CEBA57448FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492E9E6D-403E-E473-F3CC-4CEBA57448FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492E9E6D-403E-E473-F3CC-4CEBA57448FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C8EFEE-9396-F334-9B76-78322650A0C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C8EFEE-9396-F334-9B76-78322650A0C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C8EFEE-9396-F334-9B76-78322650A0C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C8EFEE-9396-F334-9B76-78322650A0C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -280,6 +300,10 @@ Global
 		{1FD27C49-8173-249A-80E9-DBA071A56E8D} = {2BF08754-1FB0-405D-9F0C-1BEFF9084E6E}
 		{4C4DAF3C-DE71-F6B3-F3A3-15583A8B719F} = {2BF08754-1FB0-405D-9F0C-1BEFF9084E6E}
 		{BB81E01D-7453-9068-B1E3-90E3072C820B} = {2BF08754-1FB0-405D-9F0C-1BEFF9084E6E}
+		{F670C86F-ACDA-4549-B9E1-E530B1ED5538} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{5D17BB88-130E-3A6E-CC4C-5DBB10C6C78F} = {F670C86F-ACDA-4549-B9E1-E530B1ED5538}
+		{492E9E6D-403E-E473-F3CC-4CEBA57448FF} = {F670C86F-ACDA-4549-B9E1-E530B1ED5538}
+		{95C8EFEE-9396-F334-9B76-78322650A0C6} = {F670C86F-ACDA-4549-B9E1-E530B1ED5538}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}
