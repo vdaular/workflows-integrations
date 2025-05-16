@@ -4,7 +4,7 @@
         <Description>
             Provides integration with Telnyx.
         </Description>
-        <PackageTags>elsa module telephony telnyx</PackageTags>
+        <PackageTags>elsa extension module telephony telnyx</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

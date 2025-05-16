@@ -4,7 +4,7 @@
     <Description>
       Provides client implementations for interacting with PostgreSql databases.
     </Description>
-    <PackageTags>elsa module activities sql postgresql</PackageTags>
+    <PackageTags>elsa extension module activities sql postgresql</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

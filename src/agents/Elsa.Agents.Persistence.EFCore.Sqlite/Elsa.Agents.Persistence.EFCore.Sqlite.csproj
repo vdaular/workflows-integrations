@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <Description>Provides an EF Core migrations for SQLite for the Agents Persistence module.</Description>
-        <PackageTags>elsa module agents semantic kernel llm ai persistence efcore entity framework core sqlite</PackageTags>
+        <PackageTags>elsa extension module agents semantic kernel llm ai persistence efcore entity framework core sqlite</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

@@ -4,7 +4,7 @@
 		<Description>
 			Provides client implementations for interacting with MySql databases.
 		</Description>
-		<PackageTags>elsa module activities sql mysql</PackageTags>
+		<PackageTags>elsa extension module activities sql mysql</PackageTags>
 	</PropertyGroup>
 
 	<ItemGroup>

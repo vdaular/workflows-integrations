@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
         <Description>Provides an EF Core migrations for MySQL for the Agents Persistence module.</Description>
-        <PackageTags>elsa module agents semantic kernel llm ai persistence efcore entity framework core mysql</PackageTags>
+        <PackageTags>elsa extension module agents semantic kernel llm ai persistence efcore entity framework core mysql</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

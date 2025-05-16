@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <Description>Provides an EF Core migrations for SQL Server for the Agents Persistence module.</Description>
-        <PackageTags>elsa module agents semantic kernel llm ai persistence efcore entity framework core sqlserver</PackageTags>
+        <PackageTags>elsa extension module agents semantic kernel llm ai persistence efcore entity framework core sqlserver</PackageTags>
     </PropertyGroup>
 
 	<ItemGroup>

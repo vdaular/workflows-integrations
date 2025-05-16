@@ -4,7 +4,7 @@
     <Description>
       Provides activities to interact with sql databases.
     </Description>
-    <PackageTags>elsa module extension activities sql</PackageTags>
+    <PackageTags>elsa extension module extension activities sql</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <Description>Provides an EF Core migrations for PostgreSQL for the Agents Persistence module.</Description>
-        <PackageTags>elsa module agents semantic kernel llm ai persistence efcore entity framework core postgresql</PackageTags>
+        <PackageTags>elsa extension module agents semantic kernel llm ai persistence efcore entity framework core postgresql</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

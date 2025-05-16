@@ -7,12 +7,12 @@
         <PackageTags>elsa extension module service-bus masstransit rabbitmq</PackageTags>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\Elsa.ServiceBus.MassTransit\Elsa.ServiceBus.MassTransit.csproj" />
-    </ItemGroup>
-    
-    <ItemGroup>
+	<ItemGroup>
 		<PackageReference Include="MassTransit.RabbitMQ" />
-    </ItemGroup>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Elsa.ServiceBus.MassTransit\Elsa.ServiceBus.MassTransit.csproj" />
+	</ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@
         <Description>
             Provides integrations with an Orchard Core application instances through activities and via HTTP.
         </Description>
-        <PackageTags>elsa module orchardcore</PackageTags>
+        <PackageTags>elsa extension module orchardcore</PackageTags>
     </PropertyGroup>
     
     <ItemGroup>

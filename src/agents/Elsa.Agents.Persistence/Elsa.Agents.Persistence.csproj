@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <Description>Provides Agents persistence services</Description>
-        <PackageTags>elsa module agents semantic kernel persistence llm ai</PackageTags>
+        <PackageTags>elsa extension module agents semantic kernel persistence llm ai</PackageTags>
     </PropertyGroup>
     
     <ItemGroup>

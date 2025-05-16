@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <Description>Provides an Entity Framework Core provider for the persistence layer of the Agents module</Description>
-        <PackageTags>elsa module agents semantic kernel llm ai persistence efcore entity framework core</PackageTags>
+        <PackageTags>elsa extension module agents semantic kernel llm ai persistence efcore entity framework core</PackageTags>
     </PropertyGroup>
     
     <ItemGroup>

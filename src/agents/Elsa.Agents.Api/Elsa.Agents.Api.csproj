@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <Description>Provides Agents API endpoints</Description>
-        <PackageTags>elsa module agents semantic kernel api llm ai</PackageTags>
+        <PackageTags>elsa extension module agents semantic kernel api llm ai</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

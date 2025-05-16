@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <Description>Provides a UI for managing agents.</Description>
-        <PackageTags>elsa studio module agent ai llm semantic kernel</PackageTags>
+        <PackageTags>elsa extension studio module agent ai llm semantic kernel</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

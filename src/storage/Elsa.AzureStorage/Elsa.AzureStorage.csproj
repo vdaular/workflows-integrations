@@ -1,7 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-    </PropertyGroup>
+	<PropertyGroup>
+		<Description>
+			Provides integration with Azure Storage.
+		</Description>
+		<PackageTags>elsa extension module azure storage</PackageTags>
+	</PropertyGroup>
     
     <ItemGroup>
         <PackageReference Include="Azure.Storage.Blobs" />
