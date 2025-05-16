@@ -10,8 +10,6 @@
         <PackageReference Include="Elsa.EntityFrameworkCore" />
         <PackageReference Include="Elsa.EntityFrameworkCore.PostgreSql" />
         <PackageReference Include="Elsa.Http" />
-        <PackageReference Include="Elsa.MassTransit" />
-        <PackageReference Include="Elsa.MassTransit.RabbitMq" />
         <PackageReference Include="Elsa.Testing.Shared.Component" />
         <PackageReference Include="Elsa.Workflows.Core" />
         <PackageReference Include="Elsa.Workflows.Runtime.ProtoActor" />
@@ -19,6 +17,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\..\src\servicebus\Elsa.ServiceBus.AzureServiceBus\Elsa.ServiceBus.AzureServiceBus.csproj" />
+        <ProjectReference Include="..\..\..\src\servicebus\Elsa.ServiceBus.MassTransit.RabbitMq\Elsa.ServiceBus.MassTransit.RabbitMq.csproj" />
         <ProjectReference Include="..\Elsa.TestServer.Web\Elsa.TestServer.Web.csproj" />
     </ItemGroup>
 

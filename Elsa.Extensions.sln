@@ -107,6 +107,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Persistence.EFC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Studio.Agents", "src\agents\Elsa.Studio.Agents\Elsa.Studio.Agents.csproj", "{EDE759E1-F970-AE78-722C-6DA7B85D8C9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.ServiceBus.Kafka", "src\servicebus\Elsa.ServiceBus.Kafka\Elsa.ServiceBus.Kafka.csproj", "{861E2885-2D62-FF63-7429-2BEFD9C96CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.ServiceBus.MassTransit", "src\servicebus\Elsa.ServiceBus.MassTransit\Elsa.ServiceBus.MassTransit.csproj", "{1FD27C49-8173-249A-80E9-DBA071A56E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.ServiceBus.MassTransit.AzureServiceBus", "src\servicebus\Elsa.ServiceBus.MassTransit.AzureServiceBus\Elsa.ServiceBus.MassTransit.AzureServiceBus.csproj", "{4C4DAF3C-DE71-F6B3-F3A3-15583A8B719F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.ServiceBus.MassTransit.RabbitMq", "src\servicebus\Elsa.ServiceBus.MassTransit.RabbitMq\Elsa.ServiceBus.MassTransit.RabbitMq.csproj", "{BB81E01D-7453-9068-B1E3-90E3072C820B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +221,22 @@ Global
 		{EDE759E1-F970-AE78-722C-6DA7B85D8C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDE759E1-F970-AE78-722C-6DA7B85D8C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDE759E1-F970-AE78-722C-6DA7B85D8C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{861E2885-2D62-FF63-7429-2BEFD9C96CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{861E2885-2D62-FF63-7429-2BEFD9C96CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{861E2885-2D62-FF63-7429-2BEFD9C96CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{861E2885-2D62-FF63-7429-2BEFD9C96CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD27C49-8173-249A-80E9-DBA071A56E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD27C49-8173-249A-80E9-DBA071A56E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD27C49-8173-249A-80E9-DBA071A56E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD27C49-8173-249A-80E9-DBA071A56E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C4DAF3C-DE71-F6B3-F3A3-15583A8B719F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C4DAF3C-DE71-F6B3-F3A3-15583A8B719F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C4DAF3C-DE71-F6B3-F3A3-15583A8B719F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C4DAF3C-DE71-F6B3-F3A3-15583A8B719F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB81E01D-7453-9068-B1E3-90E3072C820B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB81E01D-7453-9068-B1E3-90E3072C820B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB81E01D-7453-9068-B1E3-90E3072C820B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB81E01D-7453-9068-B1E3-90E3072C820B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -252,6 +276,10 @@ Global
 		{5ADD78CA-3511-46F9-DB1A-C2D7F37F1B5E} = {5220DB25-20E9-4D07-801C-A970E71FB21C}
 		{80430D3A-CCEB-AA02-975B-FD91D0615456} = {5220DB25-20E9-4D07-801C-A970E71FB21C}
 		{EDE759E1-F970-AE78-722C-6DA7B85D8C9C} = {5220DB25-20E9-4D07-801C-A970E71FB21C}
+		{861E2885-2D62-FF63-7429-2BEFD9C96CE0} = {2BF08754-1FB0-405D-9F0C-1BEFF9084E6E}
+		{1FD27C49-8173-249A-80E9-DBA071A56E8D} = {2BF08754-1FB0-405D-9F0C-1BEFF9084E6E}
+		{4C4DAF3C-DE71-F6B3-F3A3-15583A8B719F} = {2BF08754-1FB0-405D-9F0C-1BEFF9084E6E}
+		{BB81E01D-7453-9068-B1E3-90E3072C820B} = {2BF08754-1FB0-405D-9F0C-1BEFF9084E6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}

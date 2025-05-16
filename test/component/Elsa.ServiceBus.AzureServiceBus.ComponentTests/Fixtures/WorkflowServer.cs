@@ -8,7 +8,7 @@ using Elsa.EntityFrameworkCore.Modules.Runtime;
 using Elsa.Extensions;
 using Elsa.Identity.Providers;
 using Elsa.ServiceBus.AzureServiceBus.ComponentTests.Extensions;
-using Elsa.MassTransit.Extensions;
+using Elsa.ServiceBus.MassTransit.Extensions;
 using Elsa.Testing.Shared.Handlers;
 using Elsa.Testing.Shared.Services;
 using Elsa.TestServer.Web;
