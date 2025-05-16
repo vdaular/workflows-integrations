@@ -4,7 +4,7 @@
         <Description>
             Provides alteration background job runners using MassTransit.
         </Description>
-        <PackageTags>elsa module alterations masstransit</PackageTags>
+        <PackageTags>elsa extension module alterations masstransit</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

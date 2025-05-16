@@ -123,6 +123,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Alterations", "src\alt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Alterations.MassTransit", "src\alterations\Elsa.Alterations.MassTransit\Elsa.Alterations.MassTransit.csproj", "{95C8EFEE-9396-F334-9B76-78322650A0C6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "caching", "caching", "{9732C4B1-3E94-4705-8CBE-1DC48F55C8EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Caching", "src\caching\Elsa.Caching\Elsa.Caching.csproj", "{21A93F3B-A799-39DA-EEBB-0D5E9B6F99A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Caching.Distributed", "src\caching\Elsa.Caching.Distributed\Elsa.Caching.Distributed.csproj", "{C568B847-15AB-C4DB-5675-0D5F400ED14D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Caching.Distributed.MassTransit", "src\caching\Elsa.Caching.Distributed.MassTransit\Elsa.Caching.Distributed.MassTransit.csproj", "{C4D65789-A62A-DAD5-7246-A0E476F86CDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Caching.Distributed.ProtoActor", "src\caching\Elsa.Caching.Distributed.ProtoActor\Elsa.Caching.Distributed.ProtoActor.csproj", "{F5B2629A-E0C9-9B73-4941-DD44DD557A9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -257,6 +267,22 @@ Global
 		{95C8EFEE-9396-F334-9B76-78322650A0C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95C8EFEE-9396-F334-9B76-78322650A0C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95C8EFEE-9396-F334-9B76-78322650A0C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21A93F3B-A799-39DA-EEBB-0D5E9B6F99A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A93F3B-A799-39DA-EEBB-0D5E9B6F99A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A93F3B-A799-39DA-EEBB-0D5E9B6F99A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A93F3B-A799-39DA-EEBB-0D5E9B6F99A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C568B847-15AB-C4DB-5675-0D5F400ED14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C568B847-15AB-C4DB-5675-0D5F400ED14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C568B847-15AB-C4DB-5675-0D5F400ED14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C568B847-15AB-C4DB-5675-0D5F400ED14D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D65789-A62A-DAD5-7246-A0E476F86CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D65789-A62A-DAD5-7246-A0E476F86CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D65789-A62A-DAD5-7246-A0E476F86CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D65789-A62A-DAD5-7246-A0E476F86CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B2629A-E0C9-9B73-4941-DD44DD557A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B2629A-E0C9-9B73-4941-DD44DD557A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B2629A-E0C9-9B73-4941-DD44DD557A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B2629A-E0C9-9B73-4941-DD44DD557A9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -304,6 +330,11 @@ Global
 		{5D17BB88-130E-3A6E-CC4C-5DBB10C6C78F} = {F670C86F-ACDA-4549-B9E1-E530B1ED5538}
 		{492E9E6D-403E-E473-F3CC-4CEBA57448FF} = {F670C86F-ACDA-4549-B9E1-E530B1ED5538}
 		{95C8EFEE-9396-F334-9B76-78322650A0C6} = {F670C86F-ACDA-4549-B9E1-E530B1ED5538}
+		{9732C4B1-3E94-4705-8CBE-1DC48F55C8EA} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{21A93F3B-A799-39DA-EEBB-0D5E9B6F99A1} = {9732C4B1-3E94-4705-8CBE-1DC48F55C8EA}
+		{C568B847-15AB-C4DB-5675-0D5F400ED14D} = {9732C4B1-3E94-4705-8CBE-1DC48F55C8EA}
+		{C4D65789-A62A-DAD5-7246-A0E476F86CDF} = {9732C4B1-3E94-4705-8CBE-1DC48F55C8EA}
+		{F5B2629A-E0C9-9B73-4941-DD44DD557A9B} = {9732C4B1-3E94-4705-8CBE-1DC48F55C8EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}

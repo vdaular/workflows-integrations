@@ -4,7 +4,7 @@
         <Description>
             Provides core interfaces, models and services that support the alteration engine.
         </Description>
-        <PackageTags>elsa module alterations</PackageTags>
+        <PackageTags>elsa extension module alterations</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

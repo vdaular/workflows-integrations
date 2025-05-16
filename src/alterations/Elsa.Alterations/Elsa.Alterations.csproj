@@ -4,7 +4,7 @@
         <Description>
             Provides alterations for workflow instances.
         </Description>
-        <PackageTags>elsa module alterations</PackageTags>
+        <PackageTags>elsa extension module alterations</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
