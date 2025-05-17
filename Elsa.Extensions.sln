@@ -191,6 +191,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Scripting.Liquid", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Scripting.Python", "src\scripting\Elsa.Scripting.Python\Elsa.Scripting.Python.csproj", "{65FCD3C0-1E47-CD9F-1B6B-0AA4EDAEE8B5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "retention", "retention", "{0EB9AB19-0C85-4551-8347-F3D330614B47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Retention", "src\retention\Elsa.Retention\Elsa.Retention.csproj", "{4C24646E-B017-9C72-5E5E-27EEE2F23D7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -441,6 +445,10 @@ Global
 		{65FCD3C0-1E47-CD9F-1B6B-0AA4EDAEE8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65FCD3C0-1E47-CD9F-1B6B-0AA4EDAEE8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65FCD3C0-1E47-CD9F-1B6B-0AA4EDAEE8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C24646E-B017-9C72-5E5E-27EEE2F23D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C24646E-B017-9C72-5E5E-27EEE2F23D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C24646E-B017-9C72-5E5E-27EEE2F23D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C24646E-B017-9C72-5E5E-27EEE2F23D7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -522,6 +530,8 @@ Global
 		{6DA083EC-9D83-A244-14FF-B0DADFFE4C81} = {D836B806-4EE7-4B1E-AA85-919ACC4B060C}
 		{C6AB11EF-F411-4427-E6A2-6E1ACE2DD1D3} = {D836B806-4EE7-4B1E-AA85-919ACC4B060C}
 		{65FCD3C0-1E47-CD9F-1B6B-0AA4EDAEE8B5} = {D836B806-4EE7-4B1E-AA85-919ACC4B060C}
+		{0EB9AB19-0C85-4551-8347-F3D330614B47} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{4C24646E-B017-9C72-5E5E-27EEE2F23D7B} = {0EB9AB19-0C85-4551-8347-F3D330614B47}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}
