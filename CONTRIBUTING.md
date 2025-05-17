@@ -18,7 +18,7 @@ cd elsa-extensions
 Ensure you have the following installed:
 - .NET 8 or higher SDK  
 - A text editor or IDE (Visual Studio, Rider, VS Code)  
-- Docker (if working on integrations that require local services)
+- Docker (if working on extensions that require local services)
 
 Then restore dependencies:
 ```sh
@@ -34,7 +34,7 @@ Create a new branch for your changes:
 ```sh
 git checkout -b feature/extension-name
 ```
-Follow the repository's structure when adding a new integration:  
+Follow the repository's structure when adding a new extensions:  
 ```
 [group-name]/
   └── Elsa.[extension-name]/
@@ -75,4 +75,4 @@ Our team will review your PR, provide feedback if necessary, and merge it once a
 ## 💬 Need Help?  
 If you need assistance, feel free to ask in [Discussions](https://github.com/elsa-workflows/elsa-extensions/discussions) or open an issue.
 
-🚀 Happy coding and thank you for contributing to Elsa Integrations!  
+🚀 Happy coding and thank you for contributing to Elsa Extensions!  
