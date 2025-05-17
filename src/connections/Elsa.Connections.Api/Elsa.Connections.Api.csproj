@@ -14,4 +14,5 @@
 		<ProjectReference Include="..\Elsa.Connections.Models\Elsa.Connections.Models.csproj" />
 		<ProjectReference Include="..\Elsa.Connections.Persistence\Elsa.Connections.Persistence.csproj" />
 	</ItemGroup>
+	
 </Project>
