@@ -173,6 +173,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Storage.AzureStorage",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Storage.Files", "src\storage\Elsa.Storage.Files\Elsa.Storage.Files.csproj", "{FE487F94-5242-C0C7-884A-3EE8FB8FC24E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "actors", "actors", "{559A9049-76C1-421C-9295-32ED7438D52E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Actors.ProtoActor", "src\actors\Elsa.Actors.ProtoActor\Elsa.Actors.ProtoActor.csproj", "{C2721BCB-2FB1-9227-AABB-ED768EB292FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -395,6 +399,10 @@ Global
 		{FE487F94-5242-C0C7-884A-3EE8FB8FC24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE487F94-5242-C0C7-884A-3EE8FB8FC24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE487F94-5242-C0C7-884A-3EE8FB8FC24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2721BCB-2FB1-9227-AABB-ED768EB292FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2721BCB-2FB1-9227-AABB-ED768EB292FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2721BCB-2FB1-9227-AABB-ED768EB292FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2721BCB-2FB1-9227-AABB-ED768EB292FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -467,6 +475,8 @@ Global
 		{41A9C3FC-6F99-1EA8-3EB4-3638AF172CB5} = {91656D55-A0E6-45B6-B48D-24DF192DAD02}
 		{9250D8B1-9D69-A957-D378-8173686A0F9C} = {45B793EC-7BFF-45C0-BD0E-2D1601C8D01E}
 		{FE487F94-5242-C0C7-884A-3EE8FB8FC24E} = {45B793EC-7BFF-45C0-BD0E-2D1601C8D01E}
+		{559A9049-76C1-421C-9295-32ED7438D52E} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{C2721BCB-2FB1-9227-AABB-ED768EB292FD} = {559A9049-76C1-421C-9295-32ED7438D52E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}

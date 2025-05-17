@@ -12,7 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-		<PackageReference Include="Elsa.Workflows.Core" />
 		<PackageReference Include="Elsa.Workflows.Management" />
 		<PackageReference Include="FluentStorage" />
     </ItemGroup>

@@ -7,7 +7,7 @@ using Elsa.Caching.Distributed.ProtoActor.Services;
 using Elsa.Features.Abstractions;
 using Elsa.Features.Attributes;
 using Elsa.Features.Services;
-using Elsa.ProtoActor;
+using Elsa.Actors.ProtoActor;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Elsa.Caching.Distributed.ProtoActor.Features;

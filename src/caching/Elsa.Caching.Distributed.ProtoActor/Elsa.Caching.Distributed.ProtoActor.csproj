@@ -8,14 +8,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Google.Protobuf" />
-        <PackageReference Include="Grpc.Tools" PrivateAssets="all" />
-        <PackageReference Include="Proto.Cluster.CodeGen" />
+      <PackageReference Include="Google.Protobuf" />
+      <PackageReference Include="Grpc.Tools" PrivateAssets="all" />
+      <PackageReference Include="Proto.Cluster.CodeGen" />
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\actors\Elsa.Actors.ProtoActor\Elsa.Actors.ProtoActor.csproj" />
         <ProjectReference Include="..\Elsa.Caching.Distributed\Elsa.Caching.Distributed.csproj" />
-        <ProjectReference Include="..\Elsa.ProtoActor.Core\Elsa.ProtoActor.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>

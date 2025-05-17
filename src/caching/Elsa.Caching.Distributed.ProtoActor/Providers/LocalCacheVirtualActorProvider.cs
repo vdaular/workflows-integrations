@@ -1,6 +1,6 @@
 using Elsa.Caching.Distributed.ProtoActor.ProtoBuf;
-using Elsa.ProtoActor;
-using Elsa.ProtoActor.MemberStrategies;
+using Elsa.Actors.ProtoActor;
+using Elsa.Actors.ProtoActor.MemberStrategies;
 using Google.Protobuf.Reflection;
 using Proto;
 using Proto.Cluster;
