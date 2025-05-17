@@ -1,9 +1,9 @@
 using System.Dynamic;
 using Confluent.Kafka;
-using Elsa.Kafka.Implementations;
-using Elsa.Kafka.Serializers;
+using Elsa.ServiceBus.Kafka.Implementations;
+using Elsa.ServiceBus.Kafka.Serializers;
 
-namespace Elsa.Kafka.Factories;
+namespace Elsa.ServiceBus.Kafka.Factories;
 
 public class ExpandoObjectConsumerFactory : IConsumerFactory
 {

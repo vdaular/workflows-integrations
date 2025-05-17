@@ -3,7 +3,7 @@ using Elsa.Workflows.Runtime;
 using Elsa.Workflows.Runtime.Notifications;
 using JetBrains.Annotations;
 
-namespace Elsa.Kafka.Handlers;
+namespace Elsa.ServiceBus.Kafka.Handlers;
 
 /// <summary>
 /// Creates workers for each trigger &amp; bookmark in response to updated workflow trigger indexes and bookmarks.

@@ -1,7 +1,7 @@
 using Confluent.Kafka;
 using Elsa.Expressions.Helpers;
 
-namespace Elsa.Kafka.Implementations;
+namespace Elsa.ServiceBus.Kafka.Implementations;
 
 public class ProducerProxy(object producer) : IProducer
 {

@@ -1,6 +1,6 @@
 using Elsa.Extensions;
-using Elsa.Kafka.Activities;
-using Elsa.Kafka.Stimuli;
+using Elsa.ServiceBus.Kafka.Activities;
+using Elsa.ServiceBus.Kafka.Stimuli;
 using Elsa.Workflows;
 using Elsa.Workflows.Helpers;
 using Elsa.Workflows.Management;
@@ -8,7 +8,7 @@ using Elsa.Workflows.Runtime.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using Open.Linq.AsyncExtensions;
 
-namespace Elsa.Kafka.Implementations;
+namespace Elsa.ServiceBus.Kafka.Implementations;
 
 public class WorkerManager(IHasher hasher, IServiceScopeFactory scopeFactory) : IWorkerManager
 {

@@ -1,7 +1,7 @@
 using Confluent.Kafka;
-using Elsa.Kafka.Implementations;
+using Elsa.ServiceBus.Kafka.Implementations;
 
-namespace Elsa.Kafka.Factories;
+namespace Elsa.ServiceBus.Kafka.Factories;
 
 public class DefaultProducerFactory : IProducerFactory
 {

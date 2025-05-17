@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using Open.Linq.AsyncExtensions;
 
-namespace Elsa.Kafka.Implementations;
+namespace Elsa.ServiceBus.Kafka.Implementations;
 
 public class SchemaRegistryDefinitionEnumerator(IEnumerable<ISchemaRegistryDefinitionProvider> providers) : ISchemaRegistryDefinitionEnumerator
 {

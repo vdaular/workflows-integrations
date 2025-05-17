@@ -1,6 +1,6 @@
 using Elsa.Common.Entities;
 
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 public class TopicDefinition : Entity
 {

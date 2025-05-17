@@ -2,7 +2,7 @@ using System.Reflection;
 using Elsa.Workflows.UIHints.Dropdown;
 using Open.Linq.AsyncExtensions;
 
-namespace Elsa.Kafka.UIHints;
+namespace Elsa.ServiceBus.Kafka.UIHints;
 
 public class TopicDefinitionsDropdownOptionsProvider(ITopicDefinitionEnumerator topicEnumerator) : DropDownOptionsProviderBase
 {

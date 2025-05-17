@@ -1,6 +1,6 @@
 using Elsa.Workflows.Runtime.Entities;
 
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 public interface IWorkerManager
 {

@@ -1,15 +1,15 @@
 using Elsa.Extensions;
 using Elsa.Features.Abstractions;
 using Elsa.Features.Services;
-using Elsa.Kafka.Factories;
-using Elsa.Kafka.Implementations;
-using Elsa.Kafka.Providers;
-using Elsa.Kafka.Tasks;
-using Elsa.Kafka.UIHints;
+using Elsa.ServiceBus.Kafka.Factories;
+using Elsa.ServiceBus.Kafka.Implementations;
+using Elsa.ServiceBus.Kafka.Providers;
+using Elsa.ServiceBus.Kafka.Tasks;
+using Elsa.ServiceBus.Kafka.UIHints;
 using Elsa.Workflows;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 public class KafkaFeature(IModule module) : FeatureBase(module)
 {

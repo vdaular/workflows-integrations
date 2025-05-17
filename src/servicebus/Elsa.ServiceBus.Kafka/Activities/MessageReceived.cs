@@ -1,16 +1,16 @@
 using System.Runtime.CompilerServices;
 using Elsa.Expressions.Models;
 using Elsa.Extensions;
-using Elsa.Kafka.Stimuli;
-using Elsa.Kafka.UIHints;
+using Elsa.ServiceBus.Kafka.Stimuli;
+using Elsa.ServiceBus.Kafka.UIHints;
 using Elsa.Workflows;
 using Elsa.Workflows.Attributes;
 using Elsa.Workflows.Models;
 using Elsa.Workflows.UIHints;
 
-namespace Elsa.Kafka.Activities;
+namespace Elsa.ServiceBus.Kafka.Activities;
 
-[Activity("Elsa.Kafka", "Kafka", "Executes when a message is received from a given set of topics")]
+[Activity("Elsa.ServiceBus.Kafka", "Kafka", "Executes when a message is received from a given set of topics")]
 public class MessageReceived : Trigger<object>
 {
     internal const string InputKey = "TransportMessage";

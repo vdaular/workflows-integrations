@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 public static class ServiceCollectionExtensions
 {

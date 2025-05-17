@@ -1,3 +1,3 @@
-namespace Elsa.Kafka.Implementations;
+namespace Elsa.ServiceBus.Kafka.Implementations;
 
 public record ConsumerProxy(object Consumer) : IConsumer;

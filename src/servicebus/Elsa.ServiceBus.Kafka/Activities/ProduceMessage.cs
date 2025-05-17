@@ -1,7 +1,7 @@
 using System.Text;
 using Confluent.Kafka;
 using Elsa.Extensions;
-using Elsa.Kafka.UIHints;
+using Elsa.ServiceBus.Kafka.UIHints;
 using Elsa.Workflows;
 using Elsa.Workflows.Attributes;
 using Elsa.Workflows.Models;
@@ -9,9 +9,9 @@ using Elsa.Workflows.UIHints;
 using Microsoft.Extensions.Options;
 using Open.Linq.AsyncExtensions;
 
-namespace Elsa.Kafka.Activities;
+namespace Elsa.ServiceBus.Kafka.Activities;
 
-[Activity("Elsa.Kafka", "Kafka", "Produces a message and delivers it to a given topic.")]
+[Activity("Elsa.ServiceBus.Kafka", "Kafka", "Produces a message and delivers it to a given topic.")]
 public class ProduceMessage : CodeActivity
 {
     /// <summary>

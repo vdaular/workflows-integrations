@@ -2,9 +2,9 @@ using System.Text;
 using Elsa.Expressions.Contracts;
 using Elsa.Expressions.Models;
 using Elsa.Extensions;
-using Elsa.Kafka.Activities;
-using Elsa.Kafka.Notifications;
-using Elsa.Kafka.Stimuli;
+using Elsa.ServiceBus.Kafka.Activities;
+using Elsa.ServiceBus.Kafka.Notifications;
+using Elsa.ServiceBus.Kafka.Stimuli;
 using Elsa.Mediator.Contracts;
 using Elsa.Workflows;
 using Elsa.Workflows.Helpers;
@@ -17,7 +17,7 @@ using JetBrains.Annotations;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Elsa.Kafka.Handlers;
+namespace Elsa.ServiceBus.Kafka.Handlers;
 
 [UsedImplicitly]
 public class TriggerWorkflows(

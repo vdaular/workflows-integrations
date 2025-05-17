@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 public record WorkerContext(IServiceScopeFactory ScopeFactory, ConsumerDefinition ConsumerDefinition);

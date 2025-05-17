@@ -1,11 +1,11 @@
 using Confluent.Kafka;
 using Elsa.Extensions;
-using Elsa.Kafka.Notifications;
+using Elsa.ServiceBus.Kafka.Notifications;
 using Elsa.Mediator.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Elsa.Kafka.Implementations;
+namespace Elsa.ServiceBus.Kafka.Implementations;
 
 public class Worker<TKey, TValue>(WorkerContext workerContext, IConsumer<TKey, TValue> consumer, ILogger<Worker<TKey, TValue>> logger) : IWorker
 {

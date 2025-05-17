@@ -1,6 +1,6 @@
 using Elsa.Expressions.Models;
 
-namespace Elsa.Kafka.Stimuli;
+namespace Elsa.ServiceBus.Kafka.Stimuli;
 
 public class MessageReceivedStimulus
 {

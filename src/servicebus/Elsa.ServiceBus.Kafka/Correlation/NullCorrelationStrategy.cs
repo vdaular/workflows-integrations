@@ -1,4 +1,4 @@
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 /// <summary>
 /// Represents a strategy that does not extract any correlation ID from a <see cref="KafkaTransportMessage"/>.

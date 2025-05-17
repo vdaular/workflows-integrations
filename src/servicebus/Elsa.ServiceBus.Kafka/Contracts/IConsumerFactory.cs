@@ -1,4 +1,4 @@
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 public interface IConsumerFactory
 {

@@ -1,7 +1,7 @@
 using System.Text.Json;
 using Confluent.Kafka;
 
-namespace Elsa.Kafka.Serializers;
+namespace Elsa.ServiceBus.Kafka.Serializers;
 
 public class JsonSerializer<T> : ISerializer<T>
 {

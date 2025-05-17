@@ -1,7 +1,7 @@
 using System.Text;
 using Microsoft.Extensions.Options;
 
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 /// <summary>
 /// A correlation strategy that retrieves a correlation ID from a specified header in a Kafka transport message.

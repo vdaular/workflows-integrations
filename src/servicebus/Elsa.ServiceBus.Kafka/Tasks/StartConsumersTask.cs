@@ -1,7 +1,7 @@
 ﻿using Elsa.Common;
 using JetBrains.Annotations;
 
-namespace Elsa.Kafka.Tasks;
+namespace Elsa.ServiceBus.Kafka.Tasks;
 
 [UsedImplicitly]
 public class StartConsumersStartupTask(IWorkerManager workerManager, IWorkerTopicSubscriber workerTopicSubscriber) : BackgroundTask

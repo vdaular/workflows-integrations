@@ -1,4 +1,4 @@
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 /// <summary>
 /// Interface representing a strategy for extracting a correlation ID from a <see cref="KafkaTransportMessage"/>.

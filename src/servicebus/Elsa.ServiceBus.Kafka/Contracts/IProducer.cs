@@ -1,6 +1,6 @@
 using Confluent.Kafka;
 
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 public interface IProducer : IDisposable
 {

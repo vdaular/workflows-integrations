@@ -1,10 +1,10 @@
-using Elsa.Kafka.Activities;
+using Elsa.ServiceBus.Kafka.Activities;
 using Elsa.Workflows.Helpers;
 using Elsa.Workflows.Runtime;
 using Elsa.Workflows.Runtime.Entities;
 using Elsa.Workflows.Runtime.Filters;
 
-namespace Elsa.Kafka.Implementations;
+namespace Elsa.ServiceBus.Kafka.Implementations;
 
 public class WorkerTopicSubscriber(ITriggerStore triggerStore, IBookmarkStore bookmarkStore, IWorkerManager workerManager) : IWorkerTopicSubscriber
 {

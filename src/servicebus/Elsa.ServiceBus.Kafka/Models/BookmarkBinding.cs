@@ -1,5 +1,5 @@
-using Elsa.Kafka.Stimuli;
+using Elsa.ServiceBus.Kafka.Stimuli;
 
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 public record BookmarkBinding(string WorkflowInstanceId, string? CorrelationId, string BookmarkId, MessageReceivedStimulus Stimulus);

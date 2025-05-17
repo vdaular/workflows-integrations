@@ -1,7 +1,7 @@
 using Confluent.Kafka;
 using Elsa.Common.Entities;
 
-namespace Elsa.Kafka;
+namespace Elsa.ServiceBus.Kafka;
 
 public class ConsumerDefinition : Entity
 {
