@@ -1,6 +1,6 @@
 using Azure.Storage.Blobs;
 
-namespace Elsa.AzureStorage.Services;
+namespace Elsa.Storage.AzureStorage.Services;
 
 /// <summary>
 /// Provides a factory for creating and managing instances of <see cref="BlobContainerClient"/>.

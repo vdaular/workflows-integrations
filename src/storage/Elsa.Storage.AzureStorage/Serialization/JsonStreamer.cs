@@ -1,7 +1,7 @@
 using System.IO.Pipelines;
 using System.Text.Json;
 
-namespace Elsa.AzureStorage.Serialization;
+namespace Elsa.Storage.AzureStorage.Serialization;
 
 /// <summary>
 /// A helper that serializes objects to JSON and streams the output in segments.

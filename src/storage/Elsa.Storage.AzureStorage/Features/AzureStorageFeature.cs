@@ -1,9 +1,9 @@
 using Elsa.Features.Abstractions;
 using Elsa.Features.Services;
-using Elsa.AzureStorage.Services;
+using Elsa.Storage.AzureStorage.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Elsa.AzureStorage.Features;
+namespace Elsa.Storage.AzureStorage.Features;
 
 /// <summary>
 /// Represents a feature for setting up Azure Storage integration within the Elsa framework.

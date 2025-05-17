@@ -1,10 +1,10 @@
 using System.Text;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Specialized;
-using Elsa.AzureStorage.Serialization;
+using Elsa.Storage.AzureStorage.Serialization;
 using MemoryStream = System.IO.MemoryStream;
 
-namespace Elsa.AzureStorage.Extensions;
+namespace Elsa.Storage.AzureStorage.Extensions;
 
 /// <summary>
 /// Provides methods for uploading large JSON data as blocks to Azure Blob Storage

@@ -1,12 +1,12 @@
 ﻿using Azure.Storage.Blobs.Specialized;
-using Elsa.AzureStorage.Extensions;
-using Elsa.AzureStorage.Services;
+using Elsa.Storage.AzureStorage.Extensions;
+using Elsa.Storage.AzureStorage.Services;
 using Elsa.Workflows;
 using Elsa.Workflows.Attributes;
 using Elsa.Workflows.Models;
 using JetBrains.Annotations;
 
-namespace Elsa.AzureStorage.Activities;
+namespace Elsa.Storage.AzureStorage.Activities;
 
 /// <summary>
 /// Represents an activity used to upload a blob to Azure Storage.
