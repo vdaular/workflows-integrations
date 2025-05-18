@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>
+            Provides a SendEmail activity that lets you send emails from a workflow.
+        </Description>
+        <PackageTags>elsa extension module activities email</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+		<PackageReference Include="Elsa.Workflows.Core" />
+		<PackageReference Include="Elsa.Workflows.Management" />
+		<PackageReference Include="MailKit" />
+		<PackageReference Include="Microsoft.Extensions.Http" />
+    </ItemGroup>
+
+</Project>
