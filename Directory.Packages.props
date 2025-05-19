@@ -20,6 +20,7 @@
 	<PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)" />
 	<PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
 	<PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Studio.Core" Version="$(ElsaStudioVersion)" />
 	<PackageVersion Include="Elsa.Studio.Shared" Version="$(ElsaStudioVersion)" />
 	<PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
   </ItemGroup>
