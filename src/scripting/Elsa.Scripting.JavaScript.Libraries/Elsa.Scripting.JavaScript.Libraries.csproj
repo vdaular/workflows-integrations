@@ -9,12 +9,12 @@
         <PackageTags>elsa extension module expressions scripting javascript libraries</PackageTags>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\Elsa.Scripting.JavaScript\Elsa.Scripting.JavaScript.csproj" />
-    </ItemGroup>
-
 	<ItemGroup>
 		<PackageReference Include="Elsa.Features" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\Elsa.Scripting.JavaScript\Elsa.Scripting.JavaScript.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

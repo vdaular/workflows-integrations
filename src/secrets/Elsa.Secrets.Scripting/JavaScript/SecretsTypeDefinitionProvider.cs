@@ -1,6 +1,6 @@
-using Elsa.JavaScript.TypeDefinitions.Builders;
-using Elsa.JavaScript.TypeDefinitions.Contracts;
-using Elsa.JavaScript.TypeDefinitions.Models;
+using Elsa.Scripting.JavaScript.TypeDefinitions.Builders;
+using Elsa.Scripting.JavaScript.TypeDefinitions.Contracts;
+using Elsa.Scripting.JavaScript.TypeDefinitions.Models;
 using Elsa.Secrets.Management;
 using Humanizer;
 using JetBrains.Annotations;

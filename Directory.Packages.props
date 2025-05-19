@@ -5,39 +5,22 @@
   </PropertyGroup>
   <ItemGroup Label="Elsa">
     <PackageVersion Include="Elsa" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Agents.Models" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Alterations" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Api.Common" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Common" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.EntityFrameworkCore" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.EntityFrameworkCore.Common" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.EntityFrameworkCore.MySql" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.EntityFrameworkCore.Sqlite" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.EntityFrameworkCore.SqlServer" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.EntityFrameworkCore.PostgreSql" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Expressions" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Features" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Http" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Liquid" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Hosting.Management" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Identity" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.JavaScript" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Labels" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Resilience" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.SasTokens" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.ServiceBus.MassTransit" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.ServiceBus.MassTransit.RabbitMq" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
     <PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Webhooks" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Core" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
-    <PackageVersion Include="MailKit" Version="4.12.1" />
-    <PackageVersion Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="9.0.4" />
   </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="Antlr4.Runtime.Standard" Version="4.13.1" />
@@ -79,9 +62,11 @@
     <PackageVersion Include="Humanizer.Core" Version="2.14.1" />
     <PackageVersion Include="JetBrains.Annotations" Version="2024.3.0" />
     <PackageVersion Include="Jint" Version="4.2.2" />
+	<PackageVersion Include="MailKit" Version="4.12.1" />
     <PackageVersion Include="MassTransit" Version="8.4.0" />
     <PackageVersion Include="MassTransit.Azure.ServiceBus.Core" Version="8.4.0" />
     <PackageVersion Include="MassTransit.RabbitMQ" Version="8.4.0" />
+	<PackageVersion Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="9.0.4" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.12.0" />
     <PackageVersion Include="Microsoft.Data.SqlClient" Version="6.0.2" />
     <PackageVersion Include="Microsoft.Data.Sqlite" Version="9.0.4" />

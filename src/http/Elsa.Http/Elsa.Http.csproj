@@ -9,9 +9,7 @@
 
     <ItemGroup>
 		<PackageReference Include="FluentStorage" />
-		<PackageReference Include="Elsa.Liquid" />
 		<PackageReference Include="Elsa.Resilience" />
-		<PackageReference Include="Elsa.SasTokens" />
 		<PackageReference Include="Elsa.Workflows.Runtime" />
         <PackageReference Include="Microsoft.Extensions.Http.Resilience" />
         <PackageReference Include="Microsoft.Extensions.Resilience" />
@@ -19,7 +17,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\scripting\Elsa.Scripting.JavaScript\Elsa.Scripting.JavaScript.csproj" />
+		<ProjectReference Include="..\..\scripting\Elsa.Scripting.JavaScript\Elsa.Scripting.JavaScript.csproj" />
+		<ProjectReference Include="..\..\scripting\Elsa.Scripting.Liquid\Elsa.Scripting.Liquid.csproj" />
+        <ProjectReference Include="..\..\security\Elsa.SasTokens\Elsa.SasTokens.csproj" />
     </ItemGroup>
 
 </Project>

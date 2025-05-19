@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <Description>
@@ -8,7 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-		<PackageReference Include="Elsa.Workflows.Core" />
 		<PackageReference Include="Elsa.Workflows.Management" />
 		<PackageReference Include="MailKit" />
 		<PackageReference Include="Microsoft.Extensions.Http" />

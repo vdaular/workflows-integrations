@@ -8,8 +8,8 @@
     </PropertyGroup>
     
     <ItemGroup>
-      <PackageReference Include="Elsa.Http" />
-      <PackageReference Include="Elsa.Webhooks" />
+      <ProjectReference Include="..\..\http\Elsa.Http.Webhooks\Elsa.Http.Webhooks.csproj" />
+      <ProjectReference Include="..\..\http\Elsa.Http\Elsa.Http.csproj" />
     </ItemGroup>
     
 </Project>

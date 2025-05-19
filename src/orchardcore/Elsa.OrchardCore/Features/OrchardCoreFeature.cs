@@ -6,7 +6,7 @@ using Elsa.OrchardCore.ActivityProviders;
 using Elsa.OrchardCore.Client.Extensions;
 using Elsa.OrchardCore.Options;
 using Elsa.OrchardCore.WebhookPayloads;
-using Elsa.Webhooks.Features;
+using Elsa.Http.Webhooks.Features;
 using JetBrains.Annotations;
 using Microsoft.Extensions.DependencyInjection;
 

@@ -4,7 +4,7 @@ using Elsa.OrchardCore.Helpers;
 using Elsa.OrchardCore.Stimuli;
 using Elsa.OrchardCore.WebhookPayloads;
 using Elsa.Mediator.Contracts;
-using Elsa.Webhooks.Notifications;
+using Elsa.Http.Webhooks.Notifications;
 using Elsa.Workflows.Runtime;
 using JetBrains.Annotations;
 using WebhooksCore;

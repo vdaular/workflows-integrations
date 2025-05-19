@@ -1,8 +1,8 @@
 using Elsa.Features.Abstractions;
 using Elsa.Features.Attributes;
 using Elsa.Features.Services;
-using Elsa.JavaScript.Features;
-using Elsa.JavaScript.Extensions;
+using Elsa.Scripting.JavaScript.Features;
+using Elsa.Scripting.JavaScript.Extensions;
 using Elsa.Secrets.Management.Features;
 using Elsa.Secrets.Scripting.JavaScript;
 using Microsoft.Extensions.DependencyInjection;

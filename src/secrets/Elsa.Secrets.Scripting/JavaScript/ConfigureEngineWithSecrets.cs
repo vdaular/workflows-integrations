@@ -1,5 +1,5 @@
 using System.Dynamic;
-using Elsa.JavaScript.Notifications;
+using Elsa.Scripting.JavaScript.Notifications;
 using Elsa.Mediator.Contracts;
 using Elsa.Secrets.Management;
 using Humanizer;
