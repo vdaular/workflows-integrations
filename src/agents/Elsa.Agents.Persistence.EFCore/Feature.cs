@@ -1,4 +1,4 @@
-using Elsa.EntityFrameworkCore;
+using Elsa.Persistence.EFCore;
 using Elsa.Features.Attributes;
 using Elsa.Features.Services;
 using Elsa.Agents.Persistence.Entities;

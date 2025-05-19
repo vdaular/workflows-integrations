@@ -2,7 +2,7 @@
 using Elsa.Agents.Persistence.EFCore;
 
 // ReSharper disable once CheckNamespace
-namespace Elsa.EntityFrameworkCore.Extensions;
+namespace Elsa.Persistence.EFCore.Extensions;
 
 /// <summary>
 /// Provides extensions to configure EF Core to use Sqlite.

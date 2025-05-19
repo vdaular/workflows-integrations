@@ -1,5 +1,5 @@
-﻿using Elsa.EntityFrameworkCore.Abstractions;
-using Elsa.EntityFrameworkCore.Extensions;
+﻿using Elsa.Persistence.EFCore.Abstractions;
+using Elsa.Persistence.EFCore.Extensions;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 

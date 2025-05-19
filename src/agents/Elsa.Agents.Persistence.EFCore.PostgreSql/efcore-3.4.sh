@@ -1,1 +1,1 @@
-ef-migration-runtime-schema --interface Elsa.EntityFrameworkCore.IElsaDbContextSchema --efOptions "migrations add V3_4 -c AgentsDbContext -o Migrations"
+ef-migration-runtime-schema --interface Elsa.Persistence.EFCore.IElsaDbContextSchema --efOptions "migrations add V3_4 -c AgentsDbContext -o Migrations"

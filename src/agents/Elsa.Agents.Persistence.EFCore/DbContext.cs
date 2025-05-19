@@ -1,4 +1,4 @@
-using Elsa.EntityFrameworkCore;
+using Elsa.Persistence.EFCore;
 using Elsa.Agents.Persistence.Entities;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;

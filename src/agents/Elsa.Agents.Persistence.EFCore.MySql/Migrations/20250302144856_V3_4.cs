@@ -7,10 +7,10 @@ namespace Elsa.Agents.Persistence.EFCore.MySql.Migrations
     /// <inheritdoc />
     public partial class V3_4 : Migration
     {
-        private readonly Elsa.EntityFrameworkCore.IElsaDbContextSchema _schema;
+        private readonly Elsa.Persistence.EFCore.IElsaDbContextSchema _schema;
 
         /// <inheritdoc />
-        public V3_4(Elsa.EntityFrameworkCore.IElsaDbContextSchema schema)
+        public V3_4(Elsa.Persistence.EFCore.IElsaDbContextSchema schema)
         {
             _schema = schema;
         }

@@ -6,12 +6,12 @@
     </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Elsa.EntityFrameworkCore.SqlServer" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\persistence\Elsa.Persistence.EFCore.SqlServer\Elsa.Persistence.EFCore.SqlServer.csproj" />
 		<ProjectReference Include="..\Elsa.Agents.Persistence.EFCore\Elsa.Agents.Persistence.EFCore.csproj" />
 	</ItemGroup>
 
