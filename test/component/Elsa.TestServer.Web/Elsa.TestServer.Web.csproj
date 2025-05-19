@@ -7,12 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Elsa"/>
-        <PackageReference Include="Elsa.Features"/>
-        <PackageReference Include="Elsa.Identity"/>
-        <PackageReference Include="Elsa.JavaScript"/>
-        <PackageReference Include="Elsa.Workflows.Api"/>
-        <PackageReference Include="JetBrains.Annotations"/>
+        <PackageReference Include="Elsa" />
+        <PackageReference Include="Elsa.Features" />
+        <PackageReference Include="Elsa.Identity" />
+        <PackageReference Include="Elsa.Workflows.Api" />
+        <PackageReference Include="JetBrains.Annotations" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\src\scripting\Elsa.Scripting.JavaScript\Elsa.Scripting.JavaScript.csproj" />
     </ItemGroup>
 
 </Project>

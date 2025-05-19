@@ -33,10 +33,11 @@ services
             {
                 api.AddFastEndpointsAssembly<Elsa.TestServer.Web.Program>();
             })
-            .UseJavaScript(options =>
-            {
-                options.AllowClrAccess = true;
-            })
+            // Temporarily removed while current packages point to Core dependencies rather than new Extensions packages.
+            //.UseJavaScript(options =>
+            //{
+            //    options.AllowClrAccess = true;
+            //})
             .UseLiquid(liquid => liquid.FluidOptions = options => options.Encoder = HtmlEncoder.Default)
             .UseHttp(http =>
             {
