@@ -13,14 +13,15 @@
     <PackageVersion Include="Elsa.Identity" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Labels" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Resilience" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
-    <PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Workflows.Core" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Workflows.Core" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Studio.Shared" Version="$(ElsaStudioVersion)" />
+	<PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
   </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="Antlr4.Runtime.Standard" Version="4.13.1" />

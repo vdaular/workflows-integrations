@@ -257,6 +257,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Scheduling.Quartz.EFCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Scheduling.Quartz.EFCore.SqlServer", "src\scheduling\Elsa.Scheduling.Quartz.EFCore.SqlServer\Elsa.Scheduling.Quartz.EFCore.SqlServer.csproj", "{38FC815A-BA41-9440-B075-F7AAEB6EB542}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Studio.Secrets", "src\secrets\Elsa.Studio.Secrets\Elsa.Studio.Secrets.csproj", "{C818B0E4-6019-3E0C-EE4C-17248430319E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -607,6 +609,10 @@ Global
 		{38FC815A-BA41-9440-B075-F7AAEB6EB542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38FC815A-BA41-9440-B075-F7AAEB6EB542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38FC815A-BA41-9440-B075-F7AAEB6EB542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C818B0E4-6019-3E0C-EE4C-17248430319E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C818B0E4-6019-3E0C-EE4C-17248430319E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C818B0E4-6019-3E0C-EE4C-17248430319E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C818B0E4-6019-3E0C-EE4C-17248430319E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -721,6 +727,7 @@ Global
 		{6954C25F-A04A-C4FA-7BC8-FCA5FE86C59D} = {EB873525-AE02-4406-AC78-5996DE781573}
 		{B0480F01-C15B-D5C4-398D-2C11A36B9C1C} = {EB873525-AE02-4406-AC78-5996DE781573}
 		{38FC815A-BA41-9440-B075-F7AAEB6EB542} = {EB873525-AE02-4406-AC78-5996DE781573}
+		{C818B0E4-6019-3E0C-EE4C-17248430319E} = {BF696EF4-FEAE-4008-A788-369437420259}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}
