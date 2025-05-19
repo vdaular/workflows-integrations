@@ -1,10 +1,10 @@
 using System.Net.Http.Headers;
 using Elsa.Alterations.Extensions;
-using Elsa.EntityFrameworkCore.Extensions;
-using Elsa.EntityFrameworkCore.Modules.Alterations;
-using Elsa.EntityFrameworkCore.Modules.Identity;
-using Elsa.EntityFrameworkCore.Modules.Management;
-using Elsa.EntityFrameworkCore.Modules.Runtime;
+using Elsa.Persistence.EFCore.Extensions;
+using Elsa.Persistence.EFCore.Modules.Alterations;
+using Elsa.Persistence.EFCore.Modules.Identity;
+using Elsa.Persistence.EFCore.Modules.Management;
+using Elsa.Persistence.EFCore.Modules.Runtime;
 using Elsa.Extensions;
 using Elsa.Identity.Providers;
 using Elsa.ServiceBus.AzureServiceBus.ComponentTests.Extensions;
