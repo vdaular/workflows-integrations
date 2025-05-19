@@ -10,6 +10,9 @@
     <ItemGroup>
 		<PackageReference Include="FluentStorage" />
 		<PackageReference Include="Elsa.Workflows.Runtime" />
+		
+		<!-- Used to resolve the FluentStoage package warning. -->
+		<PackageReference Include="System.Text.Json" />
     </ItemGroup>
 
 </Project>

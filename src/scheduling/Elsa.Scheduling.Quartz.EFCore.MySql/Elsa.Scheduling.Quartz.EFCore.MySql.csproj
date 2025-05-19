@@ -9,10 +9,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AppAny.Quartz.EntityFrameworkCore.Migrations.MySql" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore" />
+		<PackageReference Include="AppAny.Quartz.EntityFrameworkCore.Migrations.MySql" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
-        <PackageReference Include="Quartz.Serialization.Json" />
+		<PackageReference Include="Quartz.Serialization.Json" />
+
+		<!-- Used to resolve the AppAny.Quartz.EntityFrameworkCore.Migrations.MySql package warning. -->
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" />
     </ItemGroup>
 
     <ItemGroup>

@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Elsa.Features" />
-    <PackageReference Include="Elsa.Workflows.Api" />
+	  <PackageReference Include="Elsa.Features" />
+	  <PackageReference Include="Elsa.Workflows.Runtime" />
   </ItemGroup>
 
 </Project>
