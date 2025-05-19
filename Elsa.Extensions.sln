@@ -253,6 +253,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "security", "security", "{0E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.SasTokens", "src\security\Elsa.SasTokens\Elsa.SasTokens.csproj", "{FC3053E8-97BA-6D96-191F-E551056C8B0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.WorkflowContexts", "src\workflows\Elsa.WorkflowContexts\Elsa.WorkflowContexts.csproj", "{22EF03B2-6BA9-B8BD-A627-4249397F9299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.WorkflowProviders.BlobStorage", "src\workflows\Elsa.WorkflowProviders.BlobStorage\Elsa.WorkflowProviders.BlobStorage.csproj", "{3F376159-A144-D407-D414-AB16857DB511}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -595,6 +599,14 @@ Global
 		{FC3053E8-97BA-6D96-191F-E551056C8B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC3053E8-97BA-6D96-191F-E551056C8B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC3053E8-97BA-6D96-191F-E551056C8B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22EF03B2-6BA9-B8BD-A627-4249397F9299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EF03B2-6BA9-B8BD-A627-4249397F9299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EF03B2-6BA9-B8BD-A627-4249397F9299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EF03B2-6BA9-B8BD-A627-4249397F9299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F376159-A144-D407-D414-AB16857DB511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F376159-A144-D407-D414-AB16857DB511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F376159-A144-D407-D414-AB16857DB511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F376159-A144-D407-D414-AB16857DB511}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -707,6 +719,8 @@ Global
 		{04265302-AF6B-4627-807C-DE9E1699D7C9} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{0E8D351A-BBA9-4F7C-8148-D7E7A55D34D0} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{FC3053E8-97BA-6D96-191F-E551056C8B0F} = {0E8D351A-BBA9-4F7C-8148-D7E7A55D34D0}
+		{22EF03B2-6BA9-B8BD-A627-4249397F9299} = {04265302-AF6B-4627-807C-DE9E1699D7C9}
+		{3F376159-A144-D407-D414-AB16857DB511} = {04265302-AF6B-4627-807C-DE9E1699D7C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}
