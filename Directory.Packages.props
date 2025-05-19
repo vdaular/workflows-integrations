@@ -37,6 +37,7 @@
     <PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
     <PackageVersion Include="MailKit" Version="4.12.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="9.0.4" />
   </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="Antlr4.Runtime.Standard" Version="4.13.1" />
