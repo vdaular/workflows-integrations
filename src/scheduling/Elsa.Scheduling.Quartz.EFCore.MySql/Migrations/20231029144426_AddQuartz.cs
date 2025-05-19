@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Elsa.Quartz.EntityFrameworkCore.MySql.Migrations
+namespace Elsa.Scheduling.Quartz.EFCore.MySql.Migrations
 {
     /// <inheritdoc />
     public partial class AddQuartz : Migration

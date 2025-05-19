@@ -1,5 +1,4 @@
 using Elsa.Common.Multitenancy;
-using Elsa.Scheduling;
 using Elsa.Workflows.Runtime;
 using Elsa.Workflows.Runtime.Messages;
 using Hangfire;

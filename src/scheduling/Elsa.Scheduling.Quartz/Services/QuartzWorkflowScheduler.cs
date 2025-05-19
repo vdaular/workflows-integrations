@@ -3,9 +3,8 @@ using Elsa.Common.Multitenancy;
 using Elsa.Extensions;
 using Elsa.Scheduling.Quartz.Contracts;
 using Elsa.Scheduling.Quartz.Jobs;
-using Elsa.Scheduling;
 using Quartz;
-using IScheduler = Quartz.IScheduler;
+using QuartzIScheduler = Quartz.IScheduler;
 
 namespace Elsa.Scheduling.Quartz.Services;
 
@@ -108,7 +107,7 @@ internal class QuartzWorkflowScheduler(ISchedulerFactory schedulerFactoryFactory
         await scheduler.UnscheduleJob(triggerKey, cancellationToken);
     }
     
-    private async Task ScheduleJobAsync(IScheduler scheduler, ITrigger trigger, CancellationToken cancellationToken)
+    private async Task ScheduleJobAsync(QuartzIScheduler scheduler, ITrigger trigger, CancellationToken cancellationToken)
     {
         if (!await scheduler.CheckExists(trigger.Key, cancellationToken))
             await scheduler.ScheduleJob(trigger, cancellationToken);

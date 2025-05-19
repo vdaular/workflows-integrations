@@ -6,7 +6,6 @@ using Elsa.Scheduling.Quartz.Contracts;
 using Elsa.Scheduling.Quartz.Handlers;
 using Elsa.Scheduling.Quartz.Services;
 using Elsa.Scheduling.Quartz.Tasks;
-using Elsa.Scheduling;
 using Elsa.Scheduling.Features;
 using Elsa.Workflows;
 using Microsoft.Extensions.DependencyInjection;

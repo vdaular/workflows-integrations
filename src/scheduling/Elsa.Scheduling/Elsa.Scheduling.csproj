@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <Description>
-            Provides scheduling activities such as Timer, Delay and StartAt.
-        </Description>
-        <PackageTags>elsa extension module scheduling</PackageTags>
-    </PropertyGroup>
+	<PropertyGroup>
+		<Description>
+			Provides scheduling activities such as Timer, Delay and StartAt.
+		</Description>
+		<PackageTags>elsa extension module scheduling</PackageTags>
+	</PropertyGroup>
 
-    <ItemGroup>
+	<ItemGroup>
 		<PackageReference Include="Cronos" />
 		<PackageReference Include="Elsa.Workflows.Runtime" />
-    </ItemGroup>
-    
+	</ItemGroup>
+
 </Project>

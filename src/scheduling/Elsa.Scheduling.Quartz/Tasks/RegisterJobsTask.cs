@@ -3,6 +3,7 @@ using Elsa.Scheduling.Quartz.Contracts;
 using Elsa.Scheduling.Quartz.Jobs;
 using JetBrains.Annotations;
 using Quartz;
+using QuartzIScheduler = Quartz.IScheduler;
 
 namespace Elsa.Scheduling.Quartz.Tasks;
 
@@ -21,7 +22,7 @@ internal class RegisterJobsTask(ISchedulerFactory schedulerFactoryFactory, IJobK
         await CreateJobAsync<ResumeWorkflowJob>(scheduler, cancellationToken);
     }
     
-    private async Task CreateJobAsync<TJobType>(IScheduler scheduler, CancellationToken cancellationToken) where TJobType : IJob
+    private async Task CreateJobAsync<TJobType>(QuartzIScheduler scheduler, CancellationToken cancellationToken) where TJobType : IJob
     {
         var key = jobKeyProvider.GetJobKey<TJobType>();
         var job = JobBuilder.Create<TJobType>()

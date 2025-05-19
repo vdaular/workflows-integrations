@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Elsa.Quartz.EntityFrameworkCore.PostgreSql.Migrations
+namespace Elsa.Scheduling.Quartz.EFCore.PostgreSql.Migrations
 {
     /// <inheritdoc />
     public partial class AddQuartz : Migration

@@ -1,7 +1,7 @@
 using Elsa.Features.Services;
 using Elsa.Scheduling.Quartz.Features;
-using Elsa.Scheduling;
 using Elsa.Scheduling.Features;
+using Elsa.Scheduling;
 
 // ReSharper disable once CheckNamespace
 namespace Elsa.Extensions;

@@ -5,7 +5,7 @@
         <Description>
             Provides integration with the Quartz.NET library and provide am implementation of Elsa's IJobScheduler using Quartz.NET.
         </Description>
-        <PackageTags>elsa extension module scheduling quartz</PackageTags>
+        <PackageTags>elsa module scheduling quartz</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

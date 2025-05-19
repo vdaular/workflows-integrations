@@ -1,7 +1,6 @@
 using Elsa.Common;
 using Elsa.Common.Multitenancy;
 using Elsa.Extensions;
-using Elsa.Scheduling;
 using Elsa.Workflows.Models;
 using Elsa.Workflows.Runtime;
 using Elsa.Workflows.Runtime.Messages;

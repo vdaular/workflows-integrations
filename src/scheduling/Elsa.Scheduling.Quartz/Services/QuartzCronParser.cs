@@ -1,5 +1,4 @@
 using Elsa.Common;
-using Elsa.Scheduling;
 using Quartz;
 
 namespace Elsa.Scheduling.Quartz.Services;

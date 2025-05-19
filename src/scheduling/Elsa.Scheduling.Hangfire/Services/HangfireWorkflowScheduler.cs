@@ -1,7 +1,6 @@
 using Elsa.Common.Multitenancy;
 using Elsa.Scheduling.Hangfire.Extensions;
 using Elsa.Scheduling.Hangfire.Jobs;
-using Elsa.Scheduling;
 using Hangfire;
 using Hangfire.Storage;
 
