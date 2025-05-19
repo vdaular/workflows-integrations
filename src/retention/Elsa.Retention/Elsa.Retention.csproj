@@ -4,7 +4,7 @@
         <Description>
             Provides retention options for workflows.
         </Description>
-        <PackageTags>elsa module retention archive</PackageTags>
+        <PackageTags>elsa extension module retention archive</PackageTags>
     </PropertyGroup>
 
 	<ItemGroup>

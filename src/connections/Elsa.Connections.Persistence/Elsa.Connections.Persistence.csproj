@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<Description>Provides Connections persistence services</Description>
-		<PackageTags>elsa module connections persistence </PackageTags>
+		<PackageTags>elsa extension module connections persistence </PackageTags>
 	</PropertyGroup>
 
 	<ItemGroup>

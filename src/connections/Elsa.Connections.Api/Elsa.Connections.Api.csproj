@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<Description>Provides Activity Connection API endpoints</Description>
-		<PackageTags>elsa module activity connection abstraction api</PackageTags>
+		<PackageTags>elsa extension module activity connection abstraction api</PackageTags>
 	</PropertyGroup>
 	
 	<ItemGroup>
