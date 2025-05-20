@@ -6,9 +6,9 @@
         </Description>
         <PackageTags>elsa extension module caching distributed</PackageTags>
     </PropertyGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\Elsa.Caching\Elsa.Caching.csproj" />
-    </ItemGroup>
-
+	
+	<ItemGroup>
+        <PackageReference Include="Elsa.Caching" />
+	</ItemGroup>
+	
 </Project>
