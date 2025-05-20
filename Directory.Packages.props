@@ -10,7 +10,8 @@
 	<PackageVersion Include="Elsa.Caching" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Expressions" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Features" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Hosting.Management" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Http" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Hosting.Management" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Identity" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Labels" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Resilience" Version="$(ElsaVersion)" />

@@ -9,7 +9,7 @@
 
     <ItemGroup>
 	    <PackageReference Include="Elsa.Common" />
-	    <PackageReference Include="Elsa.Identity" />
+		<PackageReference Include="Elsa.Identity" />
 	    <PackageReference Include="Elsa.Labels" />
 	    <PackageReference Include="Elsa.Workflows.Runtime" />
 	    <PackageReference Include="Microsoft.Extensions.Options" />
@@ -20,7 +20,6 @@
 	
 	<ItemGroup>
 		<ProjectReference Include="..\..\alterations\Elsa.Alterations\Elsa.Alterations.csproj" />
-		<ProjectReference Include="..\..\http\Elsa.Http\Elsa.Http.csproj" />
 	</ItemGroup>
 	
 </Project>
