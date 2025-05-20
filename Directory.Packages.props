@@ -4,14 +4,15 @@
     <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
   <ItemGroup Label="Elsa">
+    <PackageVersion Include="DistributedLock.FileSystem" Version="1.0.3" />
     <PackageVersion Include="Elsa" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Api.Common" Version="$(ElsaVersion)" />
-	<PackageVersion Include="Elsa.Common" Version="$(ElsaVersion)" />
-	<PackageVersion Include="Elsa.Caching" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Common" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Caching" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Expressions" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Features" Version="$(ElsaVersion)" />
-	<PackageVersion Include="Elsa.Http" Version="$(ElsaVersion)" />
-	<PackageVersion Include="Elsa.Hosting.Management" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Http" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Hosting.Management" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Identity" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Labels" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Resilience" Version="$(ElsaVersion)" />
