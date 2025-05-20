@@ -17,8 +17,9 @@
     <PackageVersion Include="Elsa.Labels" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Resilience" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Testing.Shared.Integration" Version="$(ElsaVersion)" />
+	<PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Core" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
