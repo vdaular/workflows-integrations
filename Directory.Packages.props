@@ -25,7 +25,8 @@
     <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Studio.Core" Version="$(ElsaStudioVersion)" />
     <PackageVersion Include="Elsa.Studio.Shared" Version="$(ElsaStudioVersion)" />
-    <PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
+	<PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
+	<PackageVersion Include="Elsa.Scripting.JavaScript" Version="3.6.0-preview.28" /> <!-- Remove after core packages are built -->
   </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="Antlr4.Runtime.Standard" Version="4.13.1" />

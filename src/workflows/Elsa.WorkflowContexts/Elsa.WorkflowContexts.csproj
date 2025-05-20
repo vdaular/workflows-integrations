@@ -9,11 +9,8 @@
 	
 	<ItemGroup>
 		<PackageReference Include="Elsa.Api.Common" />
+		<PackageReference Include="Elsa.Scripting.JavaScript" />
 		<PackageReference Include="Elsa.Workflows.Runtime" />
 	</ItemGroup>
-
-	<ItemGroup>
-        <ProjectReference Include="..\..\scripting\Elsa.Scripting.JavaScript\Elsa.Scripting.JavaScript.csproj" />
-    </ItemGroup>
 
 </Project>
