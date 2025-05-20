@@ -255,6 +255,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration", "integration"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Alterations.IntegrationTests", "test\integrations\Elsa.Alterations.IntegrationTests\Elsa.Alterations.IntegrationTests.csproj", "{1DA73581-F279-95FC-9485-B73D8A9FC727}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.MongoDb.UnitTests", "test\unit\Elsa.MongoDb.UnitTests\Elsa.MongoDb.UnitTests.csproj", "{59C29BC8-ED95-8F0B-323E-A988EADF3D38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -597,6 +599,10 @@ Global
 		{1DA73581-F279-95FC-9485-B73D8A9FC727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DA73581-F279-95FC-9485-B73D8A9FC727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DA73581-F279-95FC-9485-B73D8A9FC727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C29BC8-ED95-8F0B-323E-A988EADF3D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C29BC8-ED95-8F0B-323E-A988EADF3D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C29BC8-ED95-8F0B-323E-A988EADF3D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C29BC8-ED95-8F0B-323E-A988EADF3D38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -710,6 +716,7 @@ Global
 		{159E73C1-60F9-0D39-9CA1-79EC99187FDC} = {7D32914F-1D75-4E01-A0D1-BBF67789A0E5}
 		{E3AF86CC-B571-40A2-B44F-F48B17EB9325} = {A99FA26E-2098-403A-BD04-6BBCFBE3AC7D}
 		{1DA73581-F279-95FC-9485-B73D8A9FC727} = {E3AF86CC-B571-40A2-B44F-F48B17EB9325}
+		{59C29BC8-ED95-8F0B-323E-A988EADF3D38} = {AF041BAE-B45A-428B-B7F5-921CCB895558}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}
