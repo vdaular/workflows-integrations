@@ -4,7 +4,6 @@
     <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
   <ItemGroup Label="Elsa">
-    <PackageVersion Include="DistributedLock.FileSystem" Version="1.0.3" />
     <PackageVersion Include="Elsa" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Api.Common" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Common" Version="$(ElsaVersion)" />
@@ -51,6 +50,7 @@
     <PackageVersion Include="coverlet.collector" Version="6.0.4" />
     <PackageVersion Include="Cronos" Version="0.11.0" />
     <PackageVersion Include="Dapper" Version="2.1.66" />
+	<PackageVersion Include="DistributedLock.FileSystem" Version="1.0.3" />
     <PackageVersion Include="Elastic.Clients.Elasticsearch" Version="9.0.3" />
     <PackageVersion Include="FastEndpoints" Version="5.34.0" />
     <PackageVersion Include="FastEndpoints.Security" Version="5.34.0" />
