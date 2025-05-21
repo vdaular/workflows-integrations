@@ -12,7 +12,6 @@ using Elsa.ServiceBus.MassTransit.Models;
 using Elsa.ServiceBus.MassTransit.Options;
 using Elsa.ServiceBus.MassTransit.Services;
 using Elsa.Workflows.Attributes;
-using Elsa.Workflows.Management.Models;
 using Elsa.Workflows.Management.Options;
 using MassTransit;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,6 +25,7 @@ namespace Elsa.ServiceBus.MassTransit.Features;
 public class MassTransitFeature : FeatureBase
 {
     private bool _runInMemory;
+    private Action<IBusRegistrationConfigurator> _configureServiceBus = _ => { };
 
     /// <inheritdoc />
     public MassTransitFeature(IModule module) : base(module)
@@ -41,9 +41,18 @@ public class MassTransitFeature : FeatureBase
     public bool DisableConsumers { get; set; }
 
     /// <summary>
-    /// A delegate that can be set to configure MassTransit's <see cref="IBusRegistrationConfigurator"/>. Used by transport-level features such as AzureServiceBusFeature and RabbitMqServiceBusFeature. 
+    /// A delegate that can be set to configure MassTransit's <see cref="IBusRegistrationConfigurator"/>. Used by transport-level features such as AzureServiceBusFeature and RabbitMqServiceBusFeature.
     /// </summary>
     public Action<IBusRegistrationConfigurator>? BusConfigurator { get; set; }
+
+    /// <summary>
+    /// Allows configuring the service bus after the transport has been configured.
+    /// </summary>
+    public MassTransitFeature ConfigureServiceBus(Action<IBusRegistrationConfigurator> configure)
+    {
+        _configureServiceBus += configure;
+        return this;
+    }
 
     /// <summary>
     /// A factory that creates a <see cref="IEndpointChannelFormatter"/>.
@@ -111,6 +120,7 @@ public class MassTransitFeature : FeatureBase
                 bus.AddConsumer(definition.ConsumerType, definition.ConsumerDefinitionType);
 
             busConfigurator(bus);
+            _configureServiceBus(bus);
         });
 
         Services.AddOptions<MassTransitHostOptions>().Configure(options =>
