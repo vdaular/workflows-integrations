@@ -19,9 +19,9 @@ public class RunWorkflowInstanceResponseMapper(
     /// </summary>
     public ProtoRunWorkflowInstanceResponse Map(RunWorkflowResult source, bool includeOutput)
     {
-        if(source.WorkflowState == null!)
+        if (source.WorkflowState == null!)
             return new();
-        
+
         var response = new ProtoRunWorkflowInstanceResponse
         {
             Status = workflowStatusMapper.Map(source.WorkflowState.Status),
