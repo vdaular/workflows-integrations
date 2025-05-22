@@ -4,7 +4,6 @@
     <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
   <ItemGroup Label="Elsa">
-    <PackageVersion Include="DistributedLock.FileSystem" Version="1.0.3" />
     <PackageVersion Include="Elsa" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Api.Common" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Common" Version="$(ElsaVersion)" />
@@ -17,17 +16,17 @@
     <PackageVersion Include="Elsa.Labels" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Resilience" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)" />
-	<PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
-	<PackageVersion Include="Elsa.Testing.Shared.Integration" Version="$(ElsaVersion)" />
-	<PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Testing.Shared.Integration" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Core" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Studio.Core" Version="$(ElsaStudioVersion)" />
     <PackageVersion Include="Elsa.Studio.Shared" Version="$(ElsaStudioVersion)" />
-	<PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
-	<PackageVersion Include="Elsa.Scripting.JavaScript" Version="3.6.0-preview.28" /> <!-- Remove after core packages are built -->
+    <PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
+    <PackageVersion Include="Elsa.Scripting.JavaScript" Version="3.6.0-preview.28" /> <!-- Remove after core packages are built -->
   </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="Antlr4.Runtime.Standard" Version="4.13.1" />
@@ -51,6 +50,7 @@
     <PackageVersion Include="coverlet.collector" Version="6.0.4" />
     <PackageVersion Include="Cronos" Version="0.11.0" />
     <PackageVersion Include="Dapper" Version="2.1.66" />
+    <PackageVersion Include="DistributedLock.FileSystem" Version="1.0.3" />
     <PackageVersion Include="Elastic.Clients.Elasticsearch" Version="9.0.3" />
     <PackageVersion Include="FastEndpoints" Version="5.34.0" />
     <PackageVersion Include="FastEndpoints.Security" Version="5.34.0" />
@@ -97,9 +97,9 @@
     <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="9.0.5" />
     <PackageVersion Include="Microsoft.Extensions.Options" Version="9.0.5" />
     <PackageVersion Include="Microsoft.Extensions.Resilience" Version="9.5.0" />
-    <PackageVersion Include="Microsoft.Identity.Client" Version="4.72.0" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
-    <PackageVersion Include="Microsoft.SemanticKernel" Version="1.52.0" />
+    <PackageVersion Include="Microsoft.Identity.Client" Version="4.72.1" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.0" />
+    <PackageVersion Include="Microsoft.SemanticKernel" Version="1.53.1" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="MongoDB.Driver" Version="3.4.0" />
     <PackageVersion Include="MongoDB.Driver.Core.Extensions.DiagnosticSources" Version="2.1.0" />
