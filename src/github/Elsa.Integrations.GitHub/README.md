@@ -99,6 +99,27 @@ The token is passed to each activity and should be stored securely using the Els
 | GetOrganization | Retrieves details of an organization |
 | SearchOrganizationMembers | Lists or searches members of an organization |
 
+### Milestones
+
+| Activity | Description |
+|----------|-------------|
+| GetMilestone | Retrieves details of a specific milestone |
+| SearchMilestones | Searches for milestones in a repository |
+
+### Releases
+
+| Activity | Description |
+|----------|-------------|
+| GetRelease | Retrieves details of a specific release |
+| SearchReleases | Searches for releases in a repository |
+
+### Gists
+
+| Activity | Description |
+|----------|-------------|
+| GetGist | Retrieves a GitHub Gist by its ID |
+| SearchGists | Searches for GitHub Gists |
+
 ### Events (Triggers)
 
 | Activity | Description |
