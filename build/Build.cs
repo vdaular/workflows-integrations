@@ -24,7 +24,7 @@ partial class Build : NukeBuild, ITest, IPack
 
     [GitRepository] readonly GitRepository GitRepository;
 
-    AbsolutePath SourceDirectory => RootDirectory / "src";
+    AbsolutePath SourceDirectory => RootDirectory / "src" / "modules";
 
     public AbsolutePath PackagesDirectory => RootDirectory / "packages";
     public AbsolutePath TestResultDirectory => RootDirectory / "testresults";

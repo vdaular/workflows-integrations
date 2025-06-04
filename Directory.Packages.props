@@ -9,26 +9,43 @@
     <PackageVersion Include="Elsa.Common" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Caching" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Expressions" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Expressions.CSharp" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Expressions.Liquid" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Expressions.JavaScript" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Expressions.JavaScript.Libraries" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Expressions.Python" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Features" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Http" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Hosting.Management" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Identity" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Labels" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Persistence.EFCore.MySql" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Persistence.EFCore.Oracle" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Persistence.EFCore.PostgreSql" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Persistence.EFCore.Sqlite" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Persistence.EFCore.SqlServer" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Persistence.EFCore.Common" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Persistence.EFCore" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Resilience" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Tenants.AspNetCore" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Testing.Shared.Integration" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Scheduling" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.WorkflowProviders.BlobStorage" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Core" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
-    <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)" />
+    <PackageVersion Include="Elsa.Workflows.Runtime.Distributed" Version="$(ElsaVersion)" />
+  </ItemGroup>
+  <ItemGroup Label="Elsa Studio">
+    <PackageVersion Include="Elsa.Studio" Version="$(ElsaStudioVersion)" />
     <PackageVersion Include="Elsa.Studio.Core" Version="$(ElsaStudioVersion)" />
+    <PackageVersion Include="Elsa.Studio.Core.BlazorWasm" Version="$(ElsaStudioVersion)" />
     <PackageVersion Include="Elsa.Studio.Shared" Version="$(ElsaStudioVersion)" />
     <PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)" />
-    <PackageVersion Include="Elsa.Scripting.JavaScript" Version="3.6.0-preview.28" />
-    <PackageVersion Include="Octokit" Version="14.0.0" />
-    <!-- Remove after core packages are built -->
+    <PackageVersion Include="Elsa.Studio.Login.BlazorWasm" Version="$(ElsaStudioVersion)"/>
   </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="Antlr4.Runtime.Standard" Version="4.13.1" />
@@ -66,8 +83,11 @@
     <PackageVersion Include="Google.Protobuf" Version="3.31.0" />
     <PackageVersion Include="Grpc.Tools" Version="2.72.0" />
     <PackageVersion Include="Hangfire" Version="1.8.20" />
+    <PackageVersion Include="Hangfire.Core" Version="1.8.20" />
     <PackageVersion Include="Hangfire.MemoryStorage" Version="1.8.1.1" />
     <PackageVersion Include="Hangfire.Storage.SQLite" Version="0.4.2" />
+    <PackageVersion Include="Hangfire.SqlServer" Version="1.8.20" />
+    <PackageVersion Include="Hangfire.PostgreSql" Version="1.20.12" />
     <PackageVersion Include="Humanizer.Core" Version="2.14.1" />
     <PackageVersion Include="JetBrains.Annotations" Version="2024.3.0" />
     <PackageVersion Include="Jint" Version="4.2.2" />
@@ -75,6 +95,10 @@
     <PackageVersion Include="MassTransit" Version="8.4.1" />
     <PackageVersion Include="MassTransit.Azure.ServiceBus.Core" Version="8.4.1" />
     <PackageVersion Include="MassTransit.RabbitMQ" Version="8.4.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components" Version="9.0.5" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.5" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.5" PrivateAssets="all" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.5" />
     <PackageVersion Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="9.0.5" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.14.0" />
     <PackageVersion Include="Microsoft.Data.SqlClient" Version="6.0.2" />
@@ -112,6 +136,7 @@
     <PackageVersion Include="NSubstitute" Version="5.3.0" />
     <PackageVersion Include="NuGet.Packaging" Version="6.14.0" />
     <PackageVersion Include="NuGet.Protocol" Version="6.14.0" />
+    <PackageVersion Include="Octokit" Version="14.0.0" />
     <PackageVersion Include="Open.Linq.AsyncExtensions" Version="1.2.0" />
     <PackageVersion Include="Oracle.EntityFrameworkCore" Version="9.23.80" />
     <PackageVersion Include="Polly" Version="8.5.2" />
@@ -121,7 +146,10 @@
     <PackageVersion Include="Proto.Cluster.CodeGen" Version="1.7.0" />
     <PackageVersion Include="Proto.Cluster.TestProvider" Version="1.7.0" />
     <PackageVersion Include="Proto.OpenTelemetry" Version="1.7.0" />
+    <PackageVersion Include="Proto.Cluster.Kubernetes" Version="1.7.0" />
     <PackageVersion Include="Proto.Persistence" Version="1.7.0" />
+    <PackageVersion Include="Proto.Persistence.Sqlite" Version="1.7.0" />
+    <PackageVersion Include="Proto.Persistence.SqlServer" Version="1.7.0" />
     <PackageVersion Include="Proto.Remote" Version="1.7.0" />
     <PackageVersion Include="pythonnet" Version="3.1.0-preview2024-09-06" />
     <PackageVersion Include="Quartz.Extensions.Hosting" Version="3.14.0" />
