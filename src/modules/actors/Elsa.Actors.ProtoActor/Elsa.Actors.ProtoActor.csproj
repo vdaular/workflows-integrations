@@ -8,14 +8,10 @@
         <RootNamespace>Elsa.Actors.ProtoActor</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
 		<PackageReference Include="Elsa.Features" />
 		<PackageReference Include="Elsa.Tenants" />
 		<PackageReference Include="Elsa.Workflows.Core" />
-        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
-
-		<!-- Used to resolve the Proto.* package warnings. -->
-		<PackageReference Include="System.Text.Json" />
     </ItemGroup>
 
     <ItemGroup Label="ProtoActor">
@@ -25,6 +21,11 @@
 		<PackageReference Include="Proto.OpenTelemetry" />
 		<PackageReference Include="Proto.Persistence" />
 		<PackageReference Include="Proto.Remote" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
+        <PackageReference Include="System.Text.Json" />
     </ItemGroup>
 
 </Project>

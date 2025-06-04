@@ -1,0 +1,10 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <!-- Elsa.Actors.protoActor -->
+    <ItemGroup Condition="'$(UseProjectReferences)' == 'true' and '$(MSBuildProjectName)' == 'Elsa.Actors.ProtoActor'">
+        <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\core\src\common\Elsa.Features\Elsa.Features.csproj"/>
+        <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\core\src\modules\Elsa.Tenants\Elsa.Tenants.csproj"/>
+        <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\core\src\modules\Elsa.Workflows.Core\Elsa.Workflows.Core.csproj"/>
+    </ItemGroup>
+
+</Project>
