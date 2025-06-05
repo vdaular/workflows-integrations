@@ -43,7 +43,7 @@
     </PropertyGroup>
 
     <PropertyGroup Label="Dynamic Targeting">
-        <UseProjectReferences>true</UseProjectReferences>
+        <UseProjectReferences>false</UseProjectReferences>
     </PropertyGroup>
     <Import Project=".build\ElsaCore.ProjectReferences.targets" />
 
