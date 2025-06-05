@@ -17,11 +17,6 @@
 		<PackageReference Include="Elsa.Expressions.Python" />
         <PackageReference Include="Elsa.Http" />
         <PackageReference Include="Elsa.Identity" />
-        <PackageReference Include="Elsa.Persistence.EFCore.MySql" />
-        <PackageReference Include="Elsa.Persistence.EFCore.Oracle" />
-        <PackageReference Include="Elsa.Persistence.EFCore.PostgreSql" />
-        <PackageReference Include="Elsa.Persistence.EFCore.Sqlite" />
-        <PackageReference Include="Elsa.Persistence.EFCore.SqlServer" />
         <PackageReference Include="Elsa.Scheduling" />
 		<PackageReference Include="Elsa.Workflows.Api" />
 		<PackageReference Include="Elsa.Workflows.Runtime" />
@@ -32,6 +27,11 @@
 	</ItemGroup>
 	
 	<ItemGroup>
+		<ProjectReference Include="..\..\modules\agents\Elsa.Agents.Persistence.EFCore.MySql\Elsa.Agents.Persistence.EFCore.MySql.csproj" />
+		<ProjectReference Include="..\..\modules\agents\Elsa.Agents.Persistence.EFCore.PostgreSql\Elsa.Agents.Persistence.EFCore.PostgreSql.csproj" />
+		<ProjectReference Include="..\..\modules\agents\Elsa.Agents.Persistence.EFCore.Sqlite\Elsa.Agents.Persistence.EFCore.Sqlite.csproj" />
+		<ProjectReference Include="..\..\modules\agents\Elsa.Agents.Persistence.EFCore.SqlServer\Elsa.Agents.Persistence.EFCore.SqlServer.csproj" />
+		<ProjectReference Include="..\..\modules\agents\Elsa.Agents.Persistence.EFCore\Elsa.Agents.Persistence.EFCore.csproj" />
 		<ProjectReference Include="..\..\modules\caching\Elsa.Caching.Distributed.MassTransit\Elsa.Caching.Distributed.MassTransit.csproj" />
 		<ProjectReference Include="..\..\modules\caching\Elsa.Caching.Distributed.ProtoActor\Elsa.Caching.Distributed.ProtoActor.csproj" />
 		<ProjectReference Include="..\..\modules\caching\Elsa.Caching.Distributed\Elsa.Caching.Distributed.csproj" />
@@ -43,7 +43,15 @@
 		<ProjectReference Include="..\..\modules\connections\Elsa.Connections.Persistence\Elsa.Connections.Persistence.csproj" />
 		<ProjectReference Include="..\..\modules\email\Elsa.Email\Elsa.Email.csproj" />
 		<ProjectReference Include="..\..\modules\http\Elsa.Http.Webhooks\Elsa.Http.Webhooks.csproj" />
+		<ProjectReference Include="..\..\modules\persistence\Elsa.Persistence.EFCore.MySql\Elsa.Persistence.EFCore.MySql.csproj" />
+		<ProjectReference Include="..\..\modules\persistence\Elsa.Persistence.EFCore.Oracle\Elsa.Persistence.EFCore.Oracle.csproj" />
+		<ProjectReference Include="..\..\modules\persistence\Elsa.Persistence.EFCore.PostgreSql\Elsa.Persistence.EFCore.PostgreSql.csproj" />
+		<ProjectReference Include="..\..\modules\persistence\Elsa.Persistence.EFCore.SqlServer\Elsa.Persistence.EFCore.SqlServer.csproj" />
 		<ProjectReference Include="..\..\modules\runtimes\Elsa.Workflows.Runtime.ProtoActor\Elsa.Workflows.Runtime.ProtoActor.csproj" />
+		<ProjectReference Include="..\..\modules\secrets\Elsa.Secrets.Persistence.EFCore.PostgreSql\Elsa.Secrets.Persistence.EFCore.PostgreSql.csproj" />
+		<ProjectReference Include="..\..\modules\secrets\Elsa.Secrets.Persistence.EFCore.Sqlite\Elsa.Secrets.Persistence.EFCore.Sqlite.csproj" />
+		<ProjectReference Include="..\..\modules\secrets\Elsa.Secrets.Persistence.EFCore.SqlServer\Elsa.Secrets.Persistence.EFCore.SqlServer.csproj" />
+		<ProjectReference Include="..\..\modules\secrets\Elsa.Secrets.Persistence.EFCore\Elsa.Secrets.Persistence.EFCore.csproj" />
 		<ProjectReference Include="..\..\modules\servicebus\Elsa.ServiceBus.AzureServiceBus\Elsa.ServiceBus.AzureServiceBus.csproj" />
 		<ProjectReference Include="..\..\modules\servicebus\Elsa.ServiceBus.MassTransit.AzureServiceBus\Elsa.ServiceBus.MassTransit.AzureServiceBus.csproj" />
 		<ProjectReference Include="..\..\modules\servicebus\Elsa.ServiceBus.MassTransit.RabbitMq\Elsa.ServiceBus.MassTransit.RabbitMq.csproj" />
