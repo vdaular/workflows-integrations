@@ -1,5 +1,8 @@
 <Project>
     <PropertyGroup>
+        <UseProjectReferences>false</UseProjectReferences>
+    </PropertyGroup>
+    <PropertyGroup>
         <Authors>Elsa Workflows Community</Authors>
         <Copyright>2025</Copyright>
 
@@ -42,9 +45,6 @@
 		<ElsaStudioVersion>3.6.0-preview.1029</ElsaStudioVersion>
     </PropertyGroup>
 
-    <PropertyGroup Label="Dynamic Targeting">
-        <UseProjectReferences>false</UseProjectReferences>
-    </PropertyGroup>
     <Import Project=".build\ElsaCore.ProjectReferences.targets" />
 
 </Project>
