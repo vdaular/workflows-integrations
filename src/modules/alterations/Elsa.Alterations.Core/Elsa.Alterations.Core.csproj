@@ -9,7 +9,10 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
-		<PackageReference Include="Elsa.Workflows.Runtime" />
+    </ItemGroup>
+
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
+        <PackageReference Include="Elsa.Workflows.Runtime" />
     </ItemGroup>
 
 </Project>

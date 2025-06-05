@@ -7,7 +7,7 @@
         <PackageTags>elsa module open-telemetry</PackageTags>
     </PropertyGroup>
 
-    <ItemGroup>
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
         <PackageReference Include="Elsa.Workflows.Core" />
     </ItemGroup>
 

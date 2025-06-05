@@ -41,4 +41,10 @@
         <ElsaVersion>3.6.0-preview.3036</ElsaVersion>
 		<ElsaStudioVersion>3.6.0-preview.1029</ElsaStudioVersion>
     </PropertyGroup>
+
+    <PropertyGroup Label="Dynamic Targeting">
+        <UseProjectReferences>true</UseProjectReferences>
+    </PropertyGroup>
+    <Import Project=".build\ElsaCore.ProjectReferences.targets" />
+
 </Project>

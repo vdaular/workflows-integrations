@@ -6,8 +6,8 @@
         </Description>
         <PackageTags>elsa extension module caching distributed</PackageTags>
     </PropertyGroup>
-	
-	<ItemGroup>
+
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
         <PackageReference Include="Elsa.Caching" />
 	</ItemGroup>
 	
