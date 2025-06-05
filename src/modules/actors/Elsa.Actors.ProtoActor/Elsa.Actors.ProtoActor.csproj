@@ -8,12 +8,6 @@
         <RootNamespace>Elsa.Actors.ProtoActor</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
-		<PackageReference Include="Elsa.Features" />
-		<PackageReference Include="Elsa.Tenants" />
-		<PackageReference Include="Elsa.Workflows.Core" />
-    </ItemGroup>
-
     <ItemGroup Label="ProtoActor">
 		<PackageReference Include="Proto.Actor" />
 		<PackageReference Include="Proto.Cluster" />
@@ -26,6 +20,12 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
         <PackageReference Include="System.Text.Json" />
+    </ItemGroup>
+
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
+        <PackageReference Include="Elsa.Features" />
+        <PackageReference Include="Elsa.Tenants" />
+        <PackageReference Include="Elsa.Workflows.Core" />
     </ItemGroup>
 
 </Project>

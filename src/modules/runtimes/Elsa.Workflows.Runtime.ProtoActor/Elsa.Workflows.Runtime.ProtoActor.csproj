@@ -8,10 +8,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-		<PackageReference Include="Elsa.Workflows.Runtime" />
 		<PackageReference Include="Google.Protobuf" />
         <PackageReference Include="Grpc.Tools" PrivateAssets="all" />
         <PackageReference Include="Proto.Cluster.CodeGen" />
+    </ItemGroup>
+
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
+        <PackageReference Include="Elsa.Workflows.Runtime" />
     </ItemGroup>
 
     <ItemGroup>

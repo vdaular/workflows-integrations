@@ -8,9 +8,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-		<PackageReference Include="Elsa.Workflows.Management" />
 		<PackageReference Include="MailKit" />
 		<PackageReference Include="Microsoft.Extensions.Http" />
+    </ItemGroup>
+
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
+        <PackageReference Include="Elsa.Workflows.Management" />
     </ItemGroup>
 
 </Project>

@@ -42,9 +42,9 @@
 		<ElsaStudioVersion>3.6.0-preview.1029</ElsaStudioVersion>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <PropertyGroup Label="Dynamic Targeting">
         <UseProjectReferences>true</UseProjectReferences>
     </PropertyGroup>
-    <Import Project=".build\ElsaCore.ProjectReferences.targets" Condition="Exists('.build\ElsaCore.ProjectReferences.targets')" />
+    <Import Project=".build\ElsaCore.ProjectReferences.targets" />
 
 </Project>

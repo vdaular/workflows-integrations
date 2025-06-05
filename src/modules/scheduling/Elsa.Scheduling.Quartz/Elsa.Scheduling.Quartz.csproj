@@ -9,8 +9,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Elsa.Scheduling"/>
         <PackageReference Include="Quartz.Extensions.Hosting" />
+    </ItemGroup>
+
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
+        <PackageReference Include="Elsa.Scheduling"/>
     </ItemGroup>
 
 </Project>

@@ -7,7 +7,7 @@
     <PackageTags>elsa extension module extension activities sql</PackageTags>
   </PropertyGroup>
 
-  <ItemGroup>
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
 	  <PackageReference Include="Elsa.Features" />
 	  <PackageReference Include="Elsa.Workflows.Runtime" />
   </ItemGroup>

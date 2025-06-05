@@ -8,13 +8,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-	    <PackageReference Include="Elsa.Common" />
-		<PackageReference Include="Elsa.Identity" />
-	    <PackageReference Include="Elsa.Workflows.Runtime" />
 	    <PackageReference Include="Microsoft.Extensions.Options" />
 		<PackageReference Include="MongoDB.Driver" />
 		<PackageReference Include="MongoDB.Driver.Core.Extensions.DiagnosticSources" />
 		<PackageReference Include="MongoDB.Driver.Extensions" />
+	</ItemGroup>
+
+	<ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
+		<PackageReference Include="Elsa.Common" />
+		<PackageReference Include="Elsa.Identity" />
+		<PackageReference Include="Elsa.Workflows.Runtime" />
 	</ItemGroup>
 	
 	<ItemGroup>

@@ -8,9 +8,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-		<PackageReference Include="Elsa.Hosting.Management" />
-		<PackageReference Include="Elsa.Workflows.Runtime" />
 		<PackageReference Include="MassTransit" />
+    </ItemGroup>
+
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
+        <PackageReference Include="Elsa.Hosting.Management" />
+        <PackageReference Include="Elsa.Workflows.Runtime" />
     </ItemGroup>
 
 </Project>
