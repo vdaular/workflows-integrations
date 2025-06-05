@@ -39,7 +39,7 @@
     <PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)" />
     <PackageVersion Include="Elsa.Workflows.Runtime.Distributed" Version="$(ElsaVersion)" />
   </ItemGroup>
-  <ItemGroup Label="Elsa Studio T">
+  <ItemGroup Label="Elsa Studio">
     <PackageVersion Include="Elsa.Studio" Version="$(ElsaStudioVersion)" />
     <PackageVersion Include="Elsa.Studio.Core" Version="$(ElsaStudioVersion)" />
     <PackageVersion Include="Elsa.Studio.Core.BlazorWasm" Version="$(ElsaStudioVersion)" />
