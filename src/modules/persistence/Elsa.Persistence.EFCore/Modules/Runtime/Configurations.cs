@@ -24,6 +24,7 @@ public class Configurations :
         builder.Ignore(x => x.Exception);
         builder.Ignore(x => x.Payload);
         builder.Ignore(x => x.Outputs);
+        builder.Ignore(x => x.Metadata);
         builder.Ignore(x => x.Properties);
         builder.Property<string>("SerializedActivityState");
         builder.Property<string>("SerializedActivityStateCompressionAlgorithm");
@@ -31,6 +32,7 @@ public class Configurations :
         builder.Property<string>("SerializedPayload");
         builder.Property<string>("SerializedOutputs");
         builder.Property<string>("SerializedProperties");
+        builder.Property<string>("SerializedMetadata");
         builder.Property(x => x.Status).HasConversion<string>();
         builder.HasIndex(x => x.WorkflowInstanceId).HasDatabaseName($"IX_{nameof(ActivityExecutionRecord)}_{nameof(ActivityExecutionRecord.WorkflowInstanceId)}");
         builder.HasIndex(x => x.ActivityId).HasDatabaseName($"IX_{nameof(ActivityExecutionRecord)}_{nameof(ActivityExecutionRecord.ActivityId)}");

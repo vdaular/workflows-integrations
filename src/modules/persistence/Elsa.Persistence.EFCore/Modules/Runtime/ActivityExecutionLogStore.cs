@@ -87,11 +87,14 @@ public class EFCoreActivityExecutionStore(
         var compressionAlgorithm = options.Value.CompressionAlgorithm ?? nameof(None);
         var serializedActivityState = entity.ActivityState?.Count > 0 ? safeSerializer.Serialize(entity.ActivityState) : null;
         var compressedSerializedActivityState = serializedActivityState != null ? await compressionCodecResolver.Resolve(compressionAlgorithm).CompressAsync(serializedActivityState, cancellationToken) : null;
+        var serializedProperties = entity.Properties != null ? payloadSerializer.Serialize(entity.Properties) : null;
+        var serializedMetadata = entity.Metadata != null ? payloadSerializer.Serialize(entity.Metadata) : null;
 
         dbContext.Entry(entity).Property("SerializedActivityState").CurrentValue = compressedSerializedActivityState;
         dbContext.Entry(entity).Property("SerializedActivityStateCompressionAlgorithm").CurrentValue = compressionAlgorithm;
         dbContext.Entry(entity).Property("SerializedOutputs").CurrentValue = entity.Outputs?.Any() == true ? safeSerializer.Serialize(entity.Outputs) : null;
-        dbContext.Entry(entity).Property("SerializedProperties").CurrentValue = entity.Properties?.Any() == true ? payloadSerializer.Serialize(entity.Properties) : null;
+        dbContext.Entry(entity).Property("SerializedProperties").CurrentValue = serializedProperties;
+        dbContext.Entry(entity).Property("SerializedMetadata").CurrentValue = serializedMetadata;
         dbContext.Entry(entity).Property("SerializedException").CurrentValue = entity.Exception != null ? payloadSerializer.Serialize(entity.Exception) : null;
         dbContext.Entry(entity).Property("SerializedPayload").CurrentValue = entity.Payload?.Any() == true ? payloadSerializer.Serialize(entity.Payload) : null;
     }
@@ -105,6 +108,7 @@ public class EFCoreActivityExecutionStore(
         entity.ActivityState = await DeserializeActivityState(dbContext, entity, cancellationToken);
         entity.Outputs = Deserialize<IDictionary<string, object?>>(dbContext, entity, "SerializedOutputs");
         entity.Properties = DeserializePayload<IDictionary<string, object>?>(dbContext, entity, "SerializedProperties");
+        entity.Metadata = DeserializePayload<IDictionary<string, object>?>(dbContext, entity, "SerializedMetadata");
         entity.Exception = DeserializePayload<ExceptionState>(dbContext, entity, "SerializedException");
         entity.Payload = DeserializePayload<IDictionary<string, object>>(dbContext, entity, "SerializedPayload");
     }
