@@ -95,33 +95,33 @@
     <PackageVersion Include="MassTransit" Version="8.4.1" />
     <PackageVersion Include="MassTransit.Azure.ServiceBus.Core" Version="8.4.1" />
     <PackageVersion Include="MassTransit.RabbitMQ" Version="8.4.1" />
-    <PackageVersion Include="Microsoft.AspNetCore.Components" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="$(Microsoft)" PrivateAssets="all" />
-    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="$(Microsoft)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="$(MicrosoftVersion)" PrivateAssets="all" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="$(MicrosoftVersion)" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.14.0" />
     <PackageVersion Include="Microsoft.Data.SqlClient" Version="6.0.2" />
-    <PackageVersion Include="Microsoft.Data.Sqlite" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Data.Sqlite.Core" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(Microsoft)" />
+    <PackageVersion Include="Microsoft.Data.Sqlite" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Data.Sqlite.Core" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(MicrosoftVersion)" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.6" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.Configuration.Abstractions" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.Http" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.Http.Polly" Version="$(Microsoft)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Abstractions" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Http" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Polly" Version="$(MicrosoftVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="9.6.0" />
-    <PackageVersion Include="Microsoft.Extensions.Logging" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="$(Microsoft)" />
-    <PackageVersion Include="Microsoft.Extensions.Options" Version="$(Microsoft)" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="$(MicrosoftVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Options" Version="$(MicrosoftVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Resilience" Version="9.6.0" />
     <PackageVersion Include="Microsoft.Identity.Client" Version="4.72.1" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.0" />
@@ -160,9 +160,9 @@
     <PackageVersion Include="SlackNet" Version="0.16.1" />
     <PackageVersion Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
     <PackageVersion Include="System.Data.SqlClient" Version="4.9.0" />
-    <PackageVersion Include="System.Formats.Asn1" Version="$(Microsoft)" />
+    <PackageVersion Include="System.Formats.Asn1" Version="$(MicrosoftVersion)" />
     <PackageVersion Include="System.Linq.Async" Version="6.0.1" />
-    <PackageVersion Include="System.Text.Json" Version="$(Microsoft)" />
+    <PackageVersion Include="System.Text.Json" Version="$(MicrosoftVersion)" />
     <PackageVersion Include="Testcontainers" Version="4.2.0" />
     <PackageVersion Include="Testcontainers.PostgreSql" Version="4.4.0" />
     <PackageVersion Include="Testcontainers.RabbitMq" Version="4.4.0" />
@@ -178,6 +178,6 @@
     <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.16" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
-    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="$(Microsoft)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="$(MicrosoftVersion)" />
   </ItemGroup>
 </Project>
