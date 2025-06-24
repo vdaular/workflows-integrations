@@ -17,4 +17,16 @@
         <SupportedPlatform Include="browser" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Update="Assets\document-review-process.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="Assets\hello-world-console.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="Assets\hello-world-http.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>

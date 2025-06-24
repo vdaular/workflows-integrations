@@ -1,5 +1,7 @@
+using System.Text.Json;
 using System.Text.Json.Nodes;
 using Blazored.FluentValidation;
+using Elsa.Api.Client.Resources.WorkflowDefinitions.Models;
 using Elsa.Studio.Workflows.Domain.Contracts;
 using Elsa.Studio.Workflows.Models;
 using Elsa.Studio.Workflows.Validators;
@@ -18,13 +20,14 @@ public partial class CreateWorkflowDialog
     private EditContext _editContext = null!;
     private WorkflowPropertiesModelValidator _validator = null!;
     private FluentValidationValidator _fluentValidationValidator = null!;
-   
+
     /// <summary>
     /// The name of the workflow to create.
     /// </summary>
     [Parameter] public string WorkflowName { get; set; } = "New workflow";
+
     [CascadingParameter] private IMudDialogInstance MudDialog { get; set; } = null!;
-    [Inject] private IWorkflowDefinitionService WorkflowDefinitionService { get; set; } = null!;    
+    [Inject] private IWorkflowDefinitionService WorkflowDefinitionService { get; set; } = null!;
     [Inject] private IIdentityGenerator IdentityGenerator { get; set; } = null!;
 
     /// <inheritdoc />
@@ -44,7 +47,7 @@ public partial class CreateWorkflowDialog
 
     private async Task OnSubmitClicked()
     {
-        if(!await _fluentValidationValidator.ValidateAsync())
+        if (!await _fluentValidationValidator.ValidateAsync())
             return;
 
         await OnValidSubmit();
@@ -52,44 +55,54 @@ public partial class CreateWorkflowDialog
 
     private async Task OnValidSubmit()
     {
-        var generatedFlowchartModel = await GenerateFlowchartFromAIPromptAsync(_metadataModel.AIPrompt);
+        var workflowDefinition = await GenerateWorkflowDefinitionFromAIPromptAsync(_metadataModel.AIPrompt);
+        var serializerOptions = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true
+        };
         var result = await WorkflowDefinitionService.CreateNewDefinitionAsync(
-            _metadataModel.Name!, 
+            _metadataModel.Name!,
             _metadataModel.Description!,
-            request => request.Model.Root = generatedFlowchartModel
-        );
+            request =>
+            {
+                if (workflowDefinition == null)
+                    return;
+
+                request.Model.DefinitionId = IdentityGenerator.GenerateId();
+                request.Model.Variables = (workflowDefinition["variables"] as JsonArray ?? []).Deserialize<VariableDefinition[]>(serializerOptions);
+                request.Model.Inputs = (workflowDefinition["inputs"] as JsonArray ?? []).Deserialize<InputDefinition[]>(serializerOptions);
+                request.Model.Outputs = (workflowDefinition["outputs"] as JsonArray ?? []).Deserialize<OutputDefinition[]>(serializerOptions);
+                request.Model.Outcomes = (workflowDefinition["outcomes"] as JsonArray ?? []).Deserialize<string[]>(serializerOptions);
+                request.Model.ToolVersion = new(workflowDefinition["toolVersion"]?.ToString() ?? "1.0.0");
+                request.Model.CustomProperties = workflowDefinition["customProperties"]?.Deserialize<Dictionary<string, object>>(serializerOptions) ?? new Dictionary<string, object>();
+                request.Model.Options = workflowDefinition["options"]?.Deserialize<WorkflowOptions>(serializerOptions) ?? new WorkflowOptions();
+                request.Model.Root = workflowDefinition["root"] as JsonObject;
+            });
         MudDialog.Close(result);
     }
 
-    private async Task<JsonObject> GenerateFlowchartFromAIPromptAsync(string prompt)
+    private async Task<JsonObject?> GenerateWorkflowDefinitionFromAIPromptAsync(string prompt)
     {
-        return new(new Dictionary<string, JsonNode?>
+        if (string.IsNullOrWhiteSpace(prompt))
+            return null;
+
+        var fileName = prompt switch
         {
-            ["id"] = IdentityGenerator.GenerateId(),
-            ["type"] = "Elsa.Flowchart",
-            ["version"] = 1,
-            ["name"] = "Flowchart1",
-            ["description"] = "Generated from AI prompt",
-            ["customProperties"] = new JsonObject
-            {
-                ["AIPrompt"] = prompt
-            },
-            ["activities"] = new JsonArray
-            {
-                new JsonObject
-                {
-                    ["id"] = IdentityGenerator.GenerateId(),
-                    ["type"] = "Elsa.HttpRequest",
-                    ["name"] = "Http Request",
-                    ["inputs"] = new JsonObject
-                    {
-                        ["method"] = "GET",
-                        ["url"] = "https://api.example.com/data"
-                    }
-                }
-            },
-            ["variables"] = new JsonArray()
-        });
+            var p when p.Contains("review", StringComparison.OrdinalIgnoreCase) => "document-review-process.json",
+            var p when p.Contains("http", StringComparison.OrdinalIgnoreCase) => "hello-world-http.json",
+            var p when p.Contains("console", StringComparison.OrdinalIgnoreCase) => "hello-world-console.json",
+            _ => null
+        };
+        
+        if (fileName == null)
+            return null;
+        
+        var basePath = AppContext.BaseDirectory;
+        var filePath = Path.Combine(basePath, "Assets", fileName);
+        await using var stream = File.OpenRead(filePath);
+        var json = await JsonNode.ParseAsync(stream);
+        return (JsonObject)json!;
     }
 }
 
