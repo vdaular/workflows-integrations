@@ -1,3 +1,4 @@
+using System.Text.Json.Nodes;
 using Blazored.FluentValidation;
 using Elsa.Studio.Workflows.Domain.Contracts;
 using Elsa.Studio.Workflows.Models;
@@ -24,6 +25,7 @@ public partial class CreateWorkflowDialog
     [Parameter] public string WorkflowName { get; set; } = "New workflow";
     [CascadingParameter] private IMudDialogInstance MudDialog { get; set; } = null!;
     [Inject] private IWorkflowDefinitionService WorkflowDefinitionService { get; set; } = null!;    
+    [Inject] private IIdentityGenerator IdentityGenerator { get; set; } = null!;
 
     /// <inheritdoc />
     protected override void OnParametersSet()
@@ -50,11 +52,44 @@ public partial class CreateWorkflowDialog
 
     private async Task OnValidSubmit()
     {
+        var generatedFlowchartModel = await GenerateFlowchartFromAIPromptAsync(_metadataModel.AIPrompt);
         var result = await WorkflowDefinitionService.CreateNewDefinitionAsync(
             _metadataModel.Name!, 
-            _metadataModel.Description!
+            _metadataModel.Description!,
+            request => request.Model.Root = generatedFlowchartModel
         );
         MudDialog.Close(result);
+    }
+
+    private async Task<JsonObject> GenerateFlowchartFromAIPromptAsync(string prompt)
+    {
+        return new(new Dictionary<string, JsonNode?>
+        {
+            ["id"] = IdentityGenerator.GenerateId(),
+            ["type"] = "Elsa.Flowchart",
+            ["version"] = 1,
+            ["name"] = "Flowchart1",
+            ["description"] = "Generated from AI prompt",
+            ["customProperties"] = new JsonObject
+            {
+                ["AIPrompt"] = prompt
+            },
+            ["activities"] = new JsonArray
+            {
+                new JsonObject
+                {
+                    ["id"] = IdentityGenerator.GenerateId(),
+                    ["type"] = "Elsa.HttpRequest",
+                    ["name"] = "Http Request",
+                    ["inputs"] = new JsonObject
+                    {
+                        ["method"] = "GET",
+                        ["url"] = "https://api.example.com/data"
+                    }
+                }
+            },
+            ["variables"] = new JsonArray()
+        });
     }
 }
 
