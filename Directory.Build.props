@@ -47,5 +47,6 @@
     </PropertyGroup>
 
     <Import Project=".build\ElsaCore.ProjectReferences.targets" />
+    <Import Project=".build\ElsaStudio.ProjectReferences.targets" />
 
 </Project>

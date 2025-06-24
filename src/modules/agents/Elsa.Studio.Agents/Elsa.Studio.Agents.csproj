@@ -5,7 +5,7 @@
         <PackageTags>elsa extension studio module agent ai llm semantic kernel</PackageTags>
     </PropertyGroup>
 
-    <ItemGroup>
+    <ItemGroup Label="Elsa" Condition="'$(UseProjectReferences)' != 'true'">
       <PackageReference Include="Elsa.Studio.Workflows" />
     </ItemGroup>
 
