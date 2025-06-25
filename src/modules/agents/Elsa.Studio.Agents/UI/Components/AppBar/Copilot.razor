@@ -1,0 +1,102 @@
+@using Variant = MudBlazor.Variant
+<MudIconButton Icon="@AgentIcons.Copilot" Color="Color.Inherit" OnClick="OnClick" title="Copilot"/>
+
+<MudDrawer @bind-Open="@_open" Anchor="Anchor.End" Elevation="1" Variant="@DrawerVariant.Persistent" ClipMode="DrawerClipMode.Always" Width="500px" Height="100%">
+    <ChildContent>
+        <MudDrawerHeader>
+            <MudText Typo="Typo.h6">Elsa AI</MudText>
+        </MudDrawerHeader>
+        <MudTabs>
+            <MudTabPanel Text="Ask">
+                <Well>
+                    <MudStack>
+                        @foreach (var message in _messages)
+                        {
+                            var position = message.User == User ? ChatBubblePosition.End : ChatBubblePosition.Start;
+                            <MudChat ChatPosition="position" Color="Color.Primary" Variant="Variant.Filled">
+                                <MudChatBubble>
+                                    @message.Message
+                                </MudChatBubble>
+                            </MudChat>
+                        }
+                        <MudTextField T="string" bind-Value="_askPrompt" Label="Ask Elsa AI a question." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4" OnAdornmentClick="OnAskPromptSendMessageClick"/>
+                    </MudStack>
+                </Well>
+            </MudTabPanel>
+            <MudTabPanel Text="Edit">
+                <Well>
+                    <MudStack>
+                        <MudChat ChatPosition="ChatBubblePosition.Start" color="Color.Secondary" Variant="Variant.Filled">
+                            <MudChatBubble>
+                                Hi! How can I assist you today?
+                            </MudChatBubble>
+                            <MudChatBubble>
+                                Feel like creating some workflows? I can help with that!
+                            </MudChatBubble>
+                        </MudChat>
+                        <MudTextField T="string" Label="Ask Elsa AI to perform any edits you like." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4"/>
+                    </MudStack>
+                </Well>
+            </MudTabPanel>
+            <MudTabPanel Text="Agent">
+                <Well>
+                    <MudStack>
+                        <MudChat ChatPosition="ChatBubblePosition.Start" Color="Color.Tertiary" Variant="Variant.Filled">
+                            <MudChatBubble>
+                                Hi! How can I assist you today?
+                            </MudChatBubble>
+                            <MudChatBubble>
+                                Give me any assignment you like and I will go off and do it for you! Fully autonomous!
+                            </MudChatBubble>
+                        </MudChat>
+                        <MudTextField T="string" Label="Ask Elsa AI Agent to accomplish any goals you like." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4"/>
+                    </MudStack>
+                </Well>
+            </MudTabPanel>
+        </MudTabs>
+
+        @* <MudChat ChatPosition="ChatBubblePosition.End"> *@
+        @*     <MudChatBubble> *@
+        @*         You underestimate my power! *@
+        @*     </MudChatBubble> *@
+        @* </MudChat> *@
+
+    </ChildContent>
+</MudDrawer>
+
+@code {
+
+    private record ChatMessage(string Message, string User, Color Color);
+    private const string BotUser = "Elsa AI";
+    private const string User = "You";
+    
+    private bool _open;
+    private string _askPrompt = "";
+
+    private List<ChatMessage> _messages = new()
+    {
+        new("Hi! How can I assist you today?", BotUser, Color.Primary),
+        new("Have any questions about any of your workflows, or perhaps need some insights? I can help with that!", BotUser, Color.Primary)
+    };
+
+    private void OnClick()
+    {
+        _open = !_open;
+    }
+
+    private void OnAskPromptSendMessageClick()
+    {
+        if(string.IsNullOrWhiteSpace(_askPrompt))
+            return;
+        
+        var userMessage = new ChatMessage(_askPrompt, User, Color.Primary);
+        var botMessage = new ChatMessage("Great question... let me figure it out!", BotUser, Color.Secondary);
+        _messages.Add(userMessage);
+        _messages.Add(botMessage);
+        _askPrompt = "";
+        
+        StateHasChanged();
+        
+    }
+
+}
