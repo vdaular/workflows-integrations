@@ -94,6 +94,8 @@ public partial class CreateWorkflowDialog
             var p when p.Contains("console", StringComparison.OrdinalIgnoreCase) => "hello-world-console.json",
             var p when p.Contains("writer", StringComparison.OrdinalIgnoreCase) => "content-writer.json",
             var p when p.Contains("pipeline", StringComparison.OrdinalIgnoreCase) => "content-pipeline.json",
+            var p when p.Contains("support", StringComparison.OrdinalIgnoreCase) => "customer-support.json",
+            var p when p.Contains("customer", StringComparison.OrdinalIgnoreCase) => "customer-support.json",
             _ => null
         };
         
