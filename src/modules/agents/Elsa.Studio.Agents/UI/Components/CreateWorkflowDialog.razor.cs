@@ -89,6 +89,7 @@ public partial class CreateWorkflowDialog
 
         var fileName = prompt switch
         {
+            var p when p.Contains("loan", StringComparison.OrdinalIgnoreCase) => "loan-request.json",
             var p when p.Contains("review", StringComparison.OrdinalIgnoreCase) => "document-review-process.json",
             var p when p.Contains("http", StringComparison.OrdinalIgnoreCase) => "hello-world-http.json",
             var p when p.Contains("console", StringComparison.OrdinalIgnoreCase) => "hello-world-console.json",
