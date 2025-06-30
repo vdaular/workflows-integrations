@@ -13,7 +13,7 @@
             <MudTabPanel Text="Ask">
                 <Well>
                     <MudStack>
-                        @foreach (var message in _messages)
+                        @foreach (var message in _askMessages)
                         {
                             var position = message.User == User ? ChatBubblePosition.End : ChatBubblePosition.Start;
                             <MudChat ChatPosition="position" Color="Color.Primary" Variant="Variant.Filled">
@@ -22,47 +22,43 @@
                                 </MudChatBubble>
                             </MudChat>
                         }
-                        <MudTextField T="string" @bind-Value="_askPrompt" Label="Ask Elsa AI a question." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4" OnAdornmentClick="OnAskPromptSendMessageClick"/>
+                        <MudTextField T="string" @bind-Value="_askPrompt" Label="Ask Copilot a question." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4" OnAdornmentClick="OnAskPromptSendMessageClick"/>
                     </MudStack>
                 </Well>
             </MudTabPanel>
             <MudTabPanel Text="Edit">
                 <Well>
                     <MudStack>
-                        <MudChat ChatPosition="ChatBubblePosition.Start" color="Color.Secondary" Variant="Variant.Filled">
-                            <MudChatBubble>
-                                Hi! How can I assist you today?
-                            </MudChatBubble>
-                            <MudChatBubble>
-                                Feel like creating some workflows? I can help with that!
-                            </MudChatBubble>
-                        </MudChat>
-                        <MudTextField T="string" Label="Ask Elsa AI to perform any edits you like." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4"/>
+                        @foreach (var message in _editMessages)
+                        {
+                            var position = message.User == User ? ChatBubblePosition.End : ChatBubblePosition.Start;
+                            <MudChat ChatPosition="position" Color="Color.Secondary" Variant="Variant.Filled">
+                                <MudChatBubble>
+                                    @message.Message
+                                </MudChatBubble>
+                            </MudChat>
+                        }
+                        <MudTextField T="string" @bind-Value="_editPrompt" Label="Ask Copilot to edit something." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4" OnAdornmentClick="OnEditPromptSendMessageClick"/>
                     </MudStack>
                 </Well>
             </MudTabPanel>
             <MudTabPanel Text="Agent">
                 <Well>
                     <MudStack>
-                        <MudChat ChatPosition="ChatBubblePosition.Start" Color="Color.Tertiary" Variant="Variant.Filled">
-                            <MudChatBubble>
-                                Hi! How can I assist you today?
-                            </MudChatBubble>
-                            <MudChatBubble>
-                                Give me any assignment you like and I will go off and do it for you! Fully autonomous!
-                            </MudChatBubble>
-                        </MudChat>
-                        <MudTextField T="string" Label="Ask Elsa AI Agent to accomplish any goals you like." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4"/>
+                        @foreach (var message in _agentMessages)
+                        {
+                            var position = message.User == User ? ChatBubblePosition.End : ChatBubblePosition.Start;
+                            <MudChat ChatPosition="position" Color="Color.Tertiary" Variant="Variant.Filled">
+                                <MudChatBubble>
+                                    @message.Message
+                                </MudChatBubble>
+                            </MudChat>
+                        }
+                        <MudTextField T="string" @bind-Value="_agentPrompt" Label="Ask Copilot to accomplish a task." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4" OnAdornmentClick="OnAgentPromptSendMessageClick"/>
                     </MudStack>
                 </Well>
             </MudTabPanel>
         </MudTabs>
-
-        @* <MudChat ChatPosition="ChatBubblePosition.End"> *@
-        @*     <MudChatBubble> *@
-        @*         You underestimate my power! *@
-        @*     </MudChatBubble> *@
-        @* </MudChat> *@
 
     </ChildContent>
 </MudDrawer>
@@ -77,13 +73,13 @@
     private const string User = "You";
 
     private bool _open;
-    private string _askPrompt = "Ask me anything";
+    private string _askPrompt = "";
+    private string _editPrompt = "";
+    private string _agentPrompt = "";
 
-    private List<ChatMessage> _messages = new()
-    {
-        new("Hi! How can I assist you today?", BotUser, Color.Primary),
-        new("Have any questions about any of your workflows, or perhaps need some insights? I can help with that!", BotUser, Color.Primary)
-    };
+    private readonly List<ChatMessage> _askMessages = [new("Hi! How can I assist you today?", BotUser, Color.Primary)];
+    private readonly List<ChatMessage> _editMessages = [new("Hi! How can I assist you today?", BotUser, Color.Primary)];
+    private readonly List<ChatMessage> _agentMessages = [new("Hi! How can I assist you today?", BotUser, Color.Primary)];
 
     private void OnClick()
     {
@@ -96,14 +92,59 @@
             return;
 
         var userMessage = new ChatMessage(_askPrompt, User, Color.Primary);
-        var botMessage = new ChatMessage("Great question... let me figure it out!", BotUser, Color.Secondary);
-        _messages.Add(userMessage);
-        _messages.Add(botMessage);
+        _askMessages.Add(userMessage);
         _askPrompt = "";
-
         StateHasChanged();
+        
+        await Task.Delay(500);
+        
+        var botMessage = new ChatMessage("Looking into it...", BotUser, Color.Primary);
+        _askMessages.Add(botMessage);
+        StateHasChanged();
+        
+        await Task.Delay(1500);
+        
+        var botMessage2 = new ChatMessage("The workflow models a straightforward loan application process, orchestrating both a loan advisor agent and a communicator agent to generate a recommendation. If the recommendation is either positive or negative, the application is automatically accepted or rejected. If the recommendation calls for manual review, a user task is created—likely to notify a human agent to review the application manually. Would you like to know more?", BotUser, Color.Primary);
+        _askMessages.Add(botMessage2);
+        StateHasChanged();
+    }
+    
+    private async Task OnEditPromptSendMessageClick()
+    {
+        if (string.IsNullOrWhiteSpace(_editPrompt))
+            return;
 
+        var userMessage = new ChatMessage(_editPrompt, User, Color.Secondary);
+       
+        _editMessages.Add(userMessage);
+        _editPrompt = "";
+        StateHasChanged();
+       
+        await Task.Delay(1000);
+        
+        var botMessage = new ChatMessage("On it! I’ll let you know as soon as it’s ready.", BotUser, Color.Secondary);
+        _editMessages.Add(botMessage);
+        StateHasChanged();
+        
         await ImportWorkflowJsonAsync("loan-application-2.json");
+    }
+    
+    private async Task OnAgentPromptSendMessageClick()
+    {
+        if (string.IsNullOrWhiteSpace(_agentPrompt))
+            return;
+
+        var userMessage = new ChatMessage(_agentPrompt, User, Color.Tertiary);
+       
+        _agentMessages.Add(userMessage);
+        _agentPrompt = "";
+        StateHasChanged();
+       
+        await Task.Delay(1000);
+        
+        var botMessage = new ChatMessage("On it! I’ll let you know as soon as it’s ready.", BotUser, Color.Tertiary);
+        _agentMessages.Add(botMessage);
+        StateHasChanged();
     }
 
     private async Task ImportWorkflowJsonAsync(string fileName)
@@ -121,12 +162,13 @@
         await WorkflowDefinitionImporter.ImportJsonAsync(fileName, json, importOptions);
     }
 
-    private Task OnWorkflowDefinitionImported(WorkflowDefinition workflowDefinition)
+    private async Task OnWorkflowDefinitionImported(WorkflowDefinition workflowDefinition)
     {
-        return InvokeAsync(() =>
+        await Task.Delay(2000);
+        await InvokeAsync(() =>
         {
-            var botMessage = new ChatMessage("All set!", BotUser, Color.Secondary);
-            _messages.Add(botMessage);
+            var botMessage2 = new ChatMessage("All set! I’ve updated the workflow by replacing the communicator agents with agents that include the Email skill and removed the Send Email activities. Is there anything else you’d like me to adjust?", BotUser, Color.Secondary);
+            _editMessages.Add(botMessage2);
             StateHasChanged();
         });
     }
