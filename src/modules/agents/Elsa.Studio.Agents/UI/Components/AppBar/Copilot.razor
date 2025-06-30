@@ -1,3 +1,6 @@
+@using Elsa.Api.Client.Resources.WorkflowDefinitions.Models
+@using Elsa.Studio.Workflows.Domain.Contracts
+@using Elsa.Studio.Workflows.Domain.Models
 @using Variant = MudBlazor.Variant
 <MudIconButton Icon="@AgentIcons.Copilot" Color="Color.Inherit" OnClick="OnClick" title="Copilot"/>
 
@@ -19,7 +22,7 @@
                                 </MudChatBubble>
                             </MudChat>
                         }
-                        <MudTextField T="string" bind-Value="_askPrompt" Label="Ask Elsa AI a question." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4" OnAdornmentClick="OnAskPromptSendMessageClick"/>
+                        <MudTextField T="string" @bind-Value="_askPrompt" Label="Ask Elsa AI a question." Variant="@Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Send" AdornmentColor="Color.Primary" Lines="4" OnAdornmentClick="OnAskPromptSendMessageClick"/>
                     </MudStack>
                 </Well>
             </MudTabPanel>
@@ -66,12 +69,15 @@
 
 @code {
 
+    [Inject] private IWorkflowDefinitionImporter WorkflowDefinitionImporter { get; set; } = null!;
+
     private record ChatMessage(string Message, string User, Color Color);
+
     private const string BotUser = "Elsa AI";
     private const string User = "You";
-    
+
     private bool _open;
-    private string _askPrompt = "";
+    private string _askPrompt = "Ask me anything";
 
     private List<ChatMessage> _messages = new()
     {
@@ -84,19 +90,44 @@
         _open = !_open;
     }
 
-    private void OnAskPromptSendMessageClick()
+    private async Task OnAskPromptSendMessageClick()
     {
-        if(string.IsNullOrWhiteSpace(_askPrompt))
+        if (string.IsNullOrWhiteSpace(_askPrompt))
             return;
-        
+
         var userMessage = new ChatMessage(_askPrompt, User, Color.Primary);
         var botMessage = new ChatMessage("Great question... let me figure it out!", BotUser, Color.Secondary);
         _messages.Add(userMessage);
         _messages.Add(botMessage);
         _askPrompt = "";
-        
+
         StateHasChanged();
-        
+
+        await ImportWorkflowJsonAsync("loan-application-2.json");
     }
 
+    private async Task ImportWorkflowJsonAsync(string fileName)
+    {
+        var basePath = AppContext.BaseDirectory;
+        var filePath = Path.Combine(basePath, "Assets", fileName);
+        await using var stream = File.OpenRead(filePath);
+        var json = await new StreamReader(stream).ReadToEndAsync();
+        
+        var importOptions = new ImportOptions
+        {
+            ImportedCallback = OnWorkflowDefinitionImported 
+        };
+        
+        await WorkflowDefinitionImporter.ImportJsonAsync(fileName, json, importOptions);
+    }
+
+    private Task OnWorkflowDefinitionImported(WorkflowDefinition workflowDefinition)
+    {
+        return InvokeAsync(() =>
+        {
+            var botMessage = new ChatMessage("All set!", BotUser, Color.Secondary);
+            _messages.Add(botMessage);
+            StateHasChanged();
+        });
+    }
 }

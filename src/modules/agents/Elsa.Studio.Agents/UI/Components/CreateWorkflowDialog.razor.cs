@@ -69,7 +69,8 @@ public partial class CreateWorkflowDialog
                 if (workflowDefinition == null)
                     return;
 
-                request.Model.DefinitionId = IdentityGenerator.GenerateId();
+                request.Model.DefinitionId = workflowDefinition["definitionId"]?.ToString() ?? IdentityGenerator.GenerateId();
+                request.Model.Name = workflowDefinition["name"]?.ToString() ?? _metadataModel.Name;
                 request.Model.Variables = (workflowDefinition["variables"] as JsonArray ?? []).Deserialize<VariableDefinition[]>(serializerOptions);
                 request.Model.Inputs = (workflowDefinition["inputs"] as JsonArray ?? []).Deserialize<InputDefinition[]>(serializerOptions);
                 request.Model.Outputs = (workflowDefinition["outputs"] as JsonArray ?? []).Deserialize<OutputDefinition[]>(serializerOptions);
