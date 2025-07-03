@@ -4,7 +4,6 @@
         <Description>Provides an agentic framework using Semantic Kernel</Description>
         <PackageTags>elsa extension module agents semantic kernel llm ai</PackageTags>
         <RootNamespace>Elsa.Agents</RootNamespace>
-		<Version> 4.444.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
