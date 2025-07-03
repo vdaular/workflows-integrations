@@ -1,5 +1,5 @@
 ﻿using Microsoft.SemanticKernel;
-namespace Elsa.Agents.Contracts;
+namespace Elsa.Agents;
 
 public interface IKernelFactory
 {
