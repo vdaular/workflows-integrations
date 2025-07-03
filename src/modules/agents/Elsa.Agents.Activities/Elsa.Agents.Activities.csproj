@@ -3,7 +3,8 @@
     <PropertyGroup>
         <Description>Provides Agent activities</Description>
         <PackageTags>elsa extension module agents semantic kernel llm ai</PackageTags>
-    </PropertyGroup>
+		<Version> 3.4.0</Version>
+	</PropertyGroup>
     
     <ItemGroup>
         <PackageReference Include="Elsa" />
