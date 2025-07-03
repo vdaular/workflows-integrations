@@ -51,14 +51,14 @@ public class AgentInvoker(IKernelFactory kernelFactory, IKernelConfigProvider ke
 
         var templateFactory = new HandlebarsPromptTemplateFactory();
 
-        var manolo = new PromptTemplateConfig
+        var promptConfig = new PromptTemplateConfig
         {
             Template = agentConfig.PromptTemplate,
             TemplateFormat = "handlebars",
             Name = agentConfig.FunctionName
         };
 
-        var promptTemplate = templateFactory.Create(manolo);
+        var promptTemplate = templateFactory.Create(promptConfig);
 
         var kernelArguments = new KernelArguments(input);
         string renderedPrompt = await promptTemplate.RenderAsync(kernel, kernelArguments);
