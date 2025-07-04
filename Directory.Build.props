@@ -43,6 +43,7 @@
 	<PropertyGroup Label="PackageVersions">
         <ElsaVersion>3.7.0-preview.3055</ElsaVersion>
 		<ElsaStudioVersion>3.6.0-preview.1029</ElsaStudioVersion>
+        <MicrosoftVersion>9.0.6</MicrosoftVersion>
     </PropertyGroup>
 
     <Import Project=".build\ElsaCore.ProjectReferences.targets" />
