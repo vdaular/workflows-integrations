@@ -126,7 +126,9 @@
     <PackageVersion Include="Microsoft.Extensions.Resilience" Version="9.6.0" />
     <PackageVersion Include="Microsoft.Identity.Client" Version="4.72.1" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.0" />
-    <PackageVersion Include="Microsoft.SemanticKernel" Version="1.53.1" />
+    <PackageVersion Include="Microsoft.SemanticKernel" Version="1.58.0" />
+    <PackageVersion Include="Microsoft.SemanticKernel.Plugins.Memory" Version="1.58.0-alpha" />
+    <PackageVersion Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.58.0-preview" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="MongoDB.Driver" Version="3.4.0" />
     <PackageVersion Include="MongoDB.Driver.Core.Extensions.DiagnosticSources" Version="2.1.0" />
