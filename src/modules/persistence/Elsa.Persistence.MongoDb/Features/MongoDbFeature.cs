@@ -39,6 +39,11 @@ public class MongoDbFeature(IModule module) : FeatureBase(module)
     /// </summary>
     public Func<IServiceProvider, ICollectionNamingStrategy> CollectionNamingStrategy { get; set; } = sp => sp.GetRequiredService<DefaultNamingStrategy>();
 
+    public override void ConfigureHostedServices()
+    {
+        Module.ConfigureHostedService<ConfigureMongoDbSerializers>(-10);
+    }
+
     /// <inheritdoc />
     public override void Apply()
     {
@@ -47,22 +52,11 @@ public class MongoDbFeature(IModule module) : FeatureBase(module)
         var mongoUrl = new MongoUrl(ConnectionString);
         Services.AddSingleton(sp => CreateMongoClient(sp, mongoUrl));
         Services.AddScoped(sp => CreateDatabase(sp, mongoUrl));
-        
+
         Services.TryAddScoped<DefaultNamingStrategy>();
         Services.AddScoped(CollectionNamingStrategy);
 
-        RegisterSerializers();
         RegisterClassMaps();
-    }
-
-    private static void RegisterSerializers()
-    {
-        TryRegisterSerializerOrSkipWhenExist(typeof(object), new PolymorphicSerializer());
-        TryRegisterSerializerOrSkipWhenExist(typeof(Type), new TypeSerializer());
-        TryRegisterSerializerOrSkipWhenExist(typeof(Variable), new VariableSerializer());
-        TryRegisterSerializerOrSkipWhenExist(typeof(Version), new VersionSerializer());
-        TryRegisterSerializerOrSkipWhenExist(typeof(JsonElement), new JsonElementSerializer());
-        TryRegisterSerializerOrSkipWhenExist(typeof(JsonNode), new JsonNodeBsonConverter());
     }
 
     private static void RegisterClassMaps()
@@ -78,19 +72,14 @@ public class MongoDbFeature(IModule module) : FeatureBase(module)
             map.SetIgnoreExtraElements(true); // Needed for missing ID property
             map.MapProperty(x => x.Key); // Needed for non-setter property
         });
+        
+        BsonClassMap.TryRegisterClassMap<FlowScope>(map =>
+        {
+            map.AutoMap();
+            map.SetIgnoreExtraElements(true);
+        });
     }
 
-    private static void TryRegisterSerializerOrSkipWhenExist(Type type, IBsonSerializer serializer)
-    {
-       try
-       {
-           BsonSerializer.TryRegisterSerializer(type, serializer);
-       }
-       catch (BsonSerializationException ex)
-       {
-       }
-    }
-    
     private static IMongoClient CreateMongoClient(IServiceProvider sp, MongoUrl mongoUrl)
     {
         var options = sp.GetRequiredService<IOptions<MongoDbOptions>>().Value;
@@ -99,7 +88,7 @@ public class MongoDbFeature(IModule module) : FeatureBase(module)
 
         // TODO: Uncomment once https://github.com/jbogard/MongoDB.Driver.Core.Extensions.DiagnosticSources/pull/41 is merged and deployed.
         //settings.ClusterConfigurator = cb => cb.Subscribe(new DiagnosticsActivityEventSubscriber());
-        
+
         settings.ApplicationName = GetApplicationName(settings);
         settings.WriteConcern = options.WriteConcern;
         settings.ReadConcern = options.ReadConcern;
